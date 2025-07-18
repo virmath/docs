@@ -8,17 +8,15 @@ hero:
   tagline: 虚数科技 虚数精灵
   actions:
     - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
+      text: 下载
+      link: /downloads
     - theme: alt
-      text: API Examples
-      link: /api-examples
+      text: 文档
+      link: /docs/user_manual
 
 features:
-  - title: Feature A
+  - title: 简单
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
+  - title: 强大
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
 ---
