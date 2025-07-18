@@ -4,8 +4,8 @@ layout: home
 
 hero:
   name: "虚数精灵"
-  text: "A VitePress Site"
-  tagline: My great project tagline
+  text: "网站建设中..."
+  tagline: 虚数科技 虚数精灵
   actions:
     - theme: brand
       text: Markdown Examples
@@ -22,4 +22,3 @@ features:
   - title: Feature C
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
 ---
-
