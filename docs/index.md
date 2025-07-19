@@ -16,7 +16,7 @@ hero:
 
 features:
   - title: 简单
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+    details: 内容准备中...
   - title: 强大
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+    details: 内容准备中...
 ---
