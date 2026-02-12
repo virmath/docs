@@ -11,7 +11,9 @@
         data-error-callback="onTurnstileError" data-expired-callback="onTurnstileExpired"></div>
 </body>
 <script>
+    var Token = ""
     function onTurnstileSuccess(token) {
+        Token = token;
         console.log("Turnstile success:", token);
     }
     function onTurnstileError(errorCode) {
@@ -19,6 +21,9 @@
     }
     function onTurnstileExpired() {
         console.warn("Turnstile token expired");
+    }
+    function getToken() {
+        return Token;
     }
 </script>
 
