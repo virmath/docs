@@ -11,21 +11,32 @@
         data-error-callback="onTurnstileError" data-expired-callback="onTurnstileExpired"></div>
 </body>
 <script>
+    var status = 0 // 0: not completed, 1: success, 2: error
     var Token = ""
+    var ErrorCode = 0
     function onTurnstileSuccess(token) {
         Token = token;
-        console.log("Turnstile success:", token);
+        ErrorCode = 0;
+        status = 1;
     }
     function onTurnstileError(errorCode) {
         Token = "";
-        console.error("Turnstile error:", errorCode);
+        ErrorCode = errorCode;
+        status = 2;
     }
     function onTurnstileExpired() {
         Token = "";
-        console.warn("Turnstile token expired");
+        ErrorCode = 0;
+        status = 0;
     }
     function getToken() {
         return Token;
+    }
+    function getErrorCode() {
+        return ErrorCode;
+    }
+    function getStatus() {
+        return status;
     }
 </script>
 
