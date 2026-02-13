@@ -17,9 +17,11 @@
         console.log("Turnstile success:", token);
     }
     function onTurnstileError(errorCode) {
+        Token = "";
         console.error("Turnstile error:", errorCode);
     }
     function onTurnstileExpired() {
+        Token = "";
         console.warn("Turnstile token expired");
     }
     function getToken() {
