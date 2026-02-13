@@ -2,6 +2,35 @@
 <html>
 
 <head>
+    <script>
+        var status = 0 // 0: not completed, 1: success, 2: error, 3: expired
+        var Token = ""
+        var ErrorCode = 0
+        function onTurnstileSuccess(token) {
+            Token = token;
+            ErrorCode = 0;
+            status = 1;
+        }
+        function onTurnstileError(errorCode) {
+            Token = "";
+            ErrorCode = errorCode;
+            status = 2;
+        }
+        function onTurnstileExpired() {
+            Token = "";
+            ErrorCode = 0;
+            status = 3;
+        }
+        function getToken() {
+            return Token;
+        }
+        function getErrorCode() {
+            return ErrorCode;
+        }
+        function getStatus() {
+            return status;
+        }
+    </script>
     <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer>
     </script>
 </head>
@@ -10,34 +39,4 @@
     <div class="cf-turnstile" data-sitekey="0x4AAAAAACaBNUVrxMIkV-pK" data-callback="onTurnstileSuccess"
         data-error-callback="onTurnstileError" data-expired-callback="onTurnstileExpired"></div>
 </body>
-<script>
-    var status = 0 // 0: not completed, 1: success, 2: error, 3: expired
-    var Token = ""
-    var ErrorCode = 0
-    function onTurnstileSuccess(token) {
-        Token = token;
-        ErrorCode = 0;
-        status = 1;
-    }
-    function onTurnstileError(errorCode) {
-        Token = "";
-        ErrorCode = errorCode;
-        status = 2;
-    }
-    function onTurnstileExpired() {
-        Token = "";
-        ErrorCode = 0;
-        status = 3;
-    }
-    function getToken() {
-        return Token;
-    }
-    function getErrorCode() {
-        return ErrorCode;
-    }
-    function getStatus() {
-        return status;
-    }
-</script>
-
 </html>
