@@ -11,7 +11,7 @@
         data-error-callback="onTurnstileError" data-expired-callback="onTurnstileExpired"></div>
 </body>
 <script>
-    var status = 0 // 0: not completed, 1: success, 2: error
+    var status = 0 // 0: not completed, 1: success, 2: error, 3: expired
     var Token = ""
     var ErrorCode = 0
     function onTurnstileSuccess(token) {
@@ -27,7 +27,7 @@
     function onTurnstileExpired() {
         Token = "";
         ErrorCode = 0;
-        status = 0;
+        status = 3;
     }
     function getToken() {
         return Token;
