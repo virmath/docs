@@ -1,4 +1,4 @@
 #!/bin/bash
 npm run docs:build
-cp Turnstile.html docs/.vitepress/dist/Turnstile.html
-cp PasswordReset.html docs/.vitepress/dist/PasswordReset.html
+cp turnstile.html docs/.vitepress/dist/turnstile.html
+cp password-reset.html docs/.vitepress/dist/password-reset.html
