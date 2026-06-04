@@ -2,6 +2,7 @@ import { h, defineComponent } from "vue";
 import DefaultTheme from "vitepress/theme";
 import ScreenshotGallery from "./components/ScreenshotGallery.vue";
 import DownloadPanel from "./components/DownloadPanel.vue";
+import PricingPanel from "./components/PricingPanel.vue";
 import type { EnhanceAppContext } from "vitepress";
 
 export default {
@@ -21,6 +22,7 @@ export default {
               releaseDate: "2026-06-05",
               platforms: "Windows x64",
             }),
+          "home-features-after": () => h(PricingPanel),
         });
     },
   }),
