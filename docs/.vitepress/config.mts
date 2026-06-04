@@ -32,4 +32,14 @@ export default defineConfig({
         '<a href="https://beian.miit.gov.cn">桂ICP备20002246号-2</a><br /><a href="https://beian.mps.gov.cn/#/query/webSearch?code=45080202000392" rel="noreferrer" target="_blank">桂公网安备45080202000392号</a>',
     },
   },
+  locales: {
+    root: {
+      label: "中文",
+      lang: "zh",
+    },
+    en: {
+      label: "English",
+      lang: "en",
+    },
+  },
 });
