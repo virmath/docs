@@ -6,8 +6,7 @@ export default defineConfig({
   description: "网站维护中...",
   head: [["link", { rel: "icon", href: "/favicon.ico" }]],
   themeConfig: {
-    // logo: '/logo.svg',
-
+    logo: "/favicon.ico",
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: "主页", link: "/" },
