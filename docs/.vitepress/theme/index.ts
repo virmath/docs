@@ -41,11 +41,10 @@ export default {
             h(ContactPanel, {
               email: "virmath@outlook.com",
               qqGroups: [
-                { number: "983465108", link: "https://qm.qq.com/q/your-group-link" },
-                // { number: "xxxxxxxxx", link: "https://qm.qq.com/q/..." },
+                { number: "198129874", link: "https://qm.qq.com/q/FEUkJOG5wW" },
               ],
-              githubLink: "https://github.com/virmath",
-              bilibiliLink: "https://space.bilibili.com/your-uid",
+              githubLink: "https://github.com/virmath/docs",
+              // bilibiliLink: "https://space.bilibili.com/your-uid",
             }),
           ],
         });
