@@ -10,9 +10,16 @@
           <span>{{ email }}</span>
         </a>
 
-        <a :href="qqGroupLink" class="contact-item" target="_blank" rel="noopener noreferrer">
+        <a
+          v-for="(group, i) in qqGroups"
+          :key="i"
+          :href="group.link"
+          class="contact-item"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
-          <span>{{ t.qqGroup }}: {{ qqGroup }}</span>
+          <span>{{ qqGroupLabel(i) }}: {{ group.number }}</span>
         </a>
 
         <a :href="githubLink" class="contact-item" target="_blank" rel="noopener noreferrer">
@@ -28,15 +35,13 @@
 import { computed } from "vue"
 import { useData } from "vitepress"
 
-withDefaults(defineProps<{
+const props = withDefaults(defineProps<{
   email?: string
-  qqGroup?: string
-  qqGroupLink?: string
+  qqGroups?: Array<{ number: string; link: string }>
   githubLink?: string
 }>(), {
   email: 'hello@example.com',
-  qqGroup: '123456789',
-  qqGroupLink: '#',
+  qqGroups: () => [],
   githubLink: '#',
 })
 
@@ -56,6 +61,12 @@ const messages: Record<string, Record<string, string>> = {
 }
 
 const t = computed(() => messages[lang.value] ?? messages.zh)
+
+function qqGroupLabel(index: number) {
+  if (props.qqGroups.length <= 1) return t.value.qqGroup
+  const label = t.value.qqGroup
+  return `${label} ${index + 1}`
+}
 </script>
 
 <style scoped>

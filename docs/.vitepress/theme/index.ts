@@ -40,8 +40,10 @@ export default {
             }),
             h(ContactPanel, {
               email: "virmath@outlook.com",
-              qqGroup: "983465108",
-              qqGroupLink: "https://qm.qq.com/q/your-group-link",
+              qqGroups: [
+                { number: "983465108", link: "https://qm.qq.com/q/your-group-link" },
+                // { number: "xxxxxxxxx", link: "https://qm.qq.com/q/..." },
+              ],
               githubLink: "https://github.com/virmath",
             }),
           ],
