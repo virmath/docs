@@ -3,6 +3,7 @@ import DefaultTheme from "vitepress/theme";
 import ScreenshotGallery from "./components/ScreenshotGallery.vue";
 import DownloadPanel from "./components/DownloadPanel.vue";
 import PricingPanel from "./components/PricingPanel.vue";
+import ContactPanel from "./components/ContactPanel.vue";
 import type { EnhanceAppContext } from "vitepress";
 
 export default {
@@ -22,7 +23,7 @@ export default {
               releaseDate: "2026-06-05",
               platforms: "Windows x64",
             }),
-          "home-features-after": () =>
+          "home-features-after": () => [
             h(PricingPanel, {
               plans: [
                 {
@@ -37,6 +38,13 @@ export default {
                 },
               ],
             }),
+            h(ContactPanel, {
+              email: "virmath@outlook.com",
+              qqGroup: "983465108",
+              qqGroupLink: "https://qm.qq.com/q/your-group-link",
+              githubLink: "https://github.com/virmath",
+            }),
+          ],
         });
     },
   }),
