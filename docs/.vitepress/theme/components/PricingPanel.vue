@@ -4,29 +4,62 @@
       <h2 class="pricing-heading">{{ t.heading }}</h2>
       <p class="pricing-subtitle">{{ t.subtitle }}</p>
 
-      <div class="pricing-card">
-        <div class="pricing-amount">
-          <span class="points-value">3,000</span>
-          <span class="points-label">{{ t.points }}</span>
+      <div class="pricing-cards">
+        <!-- Free Tier -->
+        <div class="plan-card free-card">
+          <div class="plan-header">
+            <h3 class="plan-name">{{ t.freeName }}</h3>
+          </div>
+          <div class="plan-body">
+            <div class="plan-price-row">
+              <span class="price-amount">0</span>
+              <span class="price-unit">{{ t.currencyUnit }}</span>
+            </div>
+            <div class="plan-duration">/ 30 {{ t.days }}</div>
+            <ul class="plan-features">
+              <li>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>{{ t.freeInstanceLabel }}</span>
+              </li>
+            </ul>
+          </div>
+          <div class="plan-footer">
+            <span class="current-badge">{{ t.currentPlan }}</span>
+          </div>
         </div>
-        <div class="pricing-equality">
-          <span class="equal-row">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 1v22"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
-            <span>30 {{ t.currencyUnit }}</span>
-          </span>
-          <span class="equal-arrow">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-          </span>
-          <span class="equal-row">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
-            <span>30 {{ t.days }}</span>
-          </span>
+
+        <!-- Paid Plans -->
+        <div
+          v-for="(plan, i) in plans"
+          :key="i"
+          class="plan-card paid-card"
+          :class="{ featured: plan.featured }"
+        >
+          <div v-if="plan.featured" class="featured-tag">{{ t.recommended }}</div>
+          <div class="plan-header">
+            <h3 class="plan-name">{{ plan.name[lang] || plan.name.zh }}</h3>
+          </div>
+          <div class="plan-body">
+            <div class="plan-price-row">
+              <span class="price-amount">{{ plan.price }}</span>
+              <span class="price-unit">{{ plan.currency[lang] || plan.currency.zh }}</span>
+            </div>
+            <div class="plan-duration">/ {{ plan.days }} {{ t.days }}</div>
+            <div class="plan-points">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              {{ plan.points }} {{ t.points }}
+            </div>
+            <ul class="plan-features">
+              <li v-for="(feat, j) in plan.features" :key="j">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>{{ feat[lang] || feat.zh }}</span>
+              </li>
+            </ul>
+          </div>
+          <div class="plan-footer">
+            <a :href="plan.ctaUrl" class="plan-btn">{{ plan.cta[lang] || plan.cta.zh }}</a>
+          </div>
         </div>
-        <div class="pricing-perk">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-          {{ t.perk }}
-        </div>
-        <a href="#" class="pricing-btn">{{ t.buyButton }}</a>
       </div>
     </div>
   </div>
@@ -36,26 +69,46 @@
 import { computed } from "vue"
 import { useData } from "vitepress"
 
+const props = withDefaults(defineProps<{
+  plans?: Array<{
+    name: { zh: string; en: string }
+    price: string
+    currency: { zh: string; en: string }
+    points: string
+    days: string
+    features: Array<{ zh: string; en: string }>
+    cta: { zh: string; en: string }
+    ctaUrl: string
+    featured?: boolean
+  }>
+}>(), {
+  plans: () => [],
+})
+
 const { lang } = useData()
 
 const messages: Record<string, Record<string, string>> = {
   zh: {
     heading: "积分订阅",
     subtitle: "购买积分兑换订阅特权，按需选择，灵活使用",
+    freeName: "免费",
+    currentPlan: "当前方案",
+    recommended: "推荐",
     points: "积分",
     currencyUnit: "元",
     days: "天",
-    perk: "不限运行实例数",
-    buyButton: "了解详情",
+    freeInstanceLabel: "1 个运行实例",
   },
   en: {
     heading: "Points Subscription",
     subtitle: "Buy points and redeem subscription privileges – flexible and on-demand",
+    freeName: "Free",
+    currentPlan: "Current Plan",
+    recommended: "Recommended",
     points: "Points",
     currencyUnit: "RMB",
     days: "Days",
-    perk: "Unlimited Running Instances",
-    buyButton: "Learn More",
+    freeInstanceLabel: "1 Running Instance",
   },
 }
 
@@ -87,87 +140,155 @@ const t = computed(() => messages[lang.value] ?? messages.zh)
   margin: 0 0 24px;
 }
 
-.pricing-card {
+.pricing-cards {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.plan-card {
+  flex: 1 1 240px;
+  max-width: 320px;
   background: var(--vp-c-bg-soft);
   border: 1px solid var(--vp-c-border);
   border-radius: 12px;
-  padding: 32px 28px;
+  padding: 0;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  position: relative;
 }
 
-.pricing-amount {
+.plan-card.featured {
+  border-color: var(--vp-c-brand-1);
+  box-shadow: 0 0 0 1px var(--vp-c-brand-1);
+}
+
+.featured-tag {
+  position: absolute;
+  top: -1px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--vp-c-brand-1);
+  color: var(--vp-c-brand-1-text, #fff);
+  font-size: 12px;
+  font-weight: 600;
+  padding: 3px 14px;
+  border-radius: 0 0 8px 8px;
+  line-height: 1.5;
+}
+
+.plan-header {
+  padding: 28px 20px 0;
+}
+
+.plan-name {
+  font-size: 17px;
+  font-weight: 700;
+  margin: 0;
+  color: var(--vp-c-text-1);
+}
+
+.plan-body {
+  padding: 20px 20px 24px;
+  flex: 1;
+}
+
+.plan-price-row {
   display: flex;
   align-items: baseline;
   justify-content: center;
-  gap: 6px;
-  margin-bottom: 20px;
+  gap: 2px;
 }
 
-.points-value {
-  font-size: 36px;
+.price-amount {
+  font-size: 32px;
   font-weight: 700;
-  color: var(--vp-c-brand-1);
+  color: var(--vp-c-text-1);
   line-height: 1;
 }
 
-.points-label {
+.free-card .price-amount {
+  color: var(--vp-c-text-2);
+}
+
+.plan-card.featured .price-amount {
+  color: var(--vp-c-brand-1);
+}
+
+.price-unit {
   font-size: 16px;
   color: var(--vp-c-text-2);
 }
 
-.pricing-equality {
+.plan-duration {
+  font-size: 13px;
+  color: var(--vp-c-text-3);
+  margin-bottom: 12px;
+}
+
+.plan-points {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 13px;
+  color: var(--vp-c-text-2);
+  background: var(--vp-c-bg-mute);
+  padding: 3px 10px;
+  border-radius: 12px;
+  margin-bottom: 14px;
+}
+
+.plan-points svg {
+  flex-shrink: 0;
+}
+
+.plan-features {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.plan-features li {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 12px;
-  flex-wrap: wrap;
-  margin-bottom: 16px;
-}
-
-.equal-row {
-  display: inline-flex;
-  align-items: center;
   gap: 6px;
-  font-size: 16px;
-  font-weight: 600;
+  font-size: 14px;
   color: var(--vp-c-text-1);
 }
 
-.equal-row svg {
+.plan-features li svg {
   flex-shrink: 0;
   color: var(--vp-c-brand-1);
 }
 
-.equal-arrow {
+.plan-footer {
+  padding: 0 20px 28px;
+}
+
+.current-badge {
+  display: inline-block;
+  font-size: 13px;
   color: var(--vp-c-text-3);
-  display: flex;
-  align-items: center;
-}
-
-.pricing-perk {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  font-size: 14px;
-  color: var(--vp-c-brand-1);
   background: var(--vp-c-bg-mute);
-  padding: 6px 16px;
-  border-radius: 20px;
-  border: 1px solid var(--vp-c-brand-1);
-  margin-bottom: 24px;
+  padding: 7px 20px;
+  border-radius: 8px;
+  border: 1px solid var(--vp-c-border);
+  cursor: default;
 }
 
-.pricing-perk svg {
-  flex-shrink: 0;
-}
-
-.pricing-btn {
+.plan-btn {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  padding: 10px 28px;
+  padding: 9px 28px;
   border-radius: 8px;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 600;
   text-decoration: none;
   transition: all 0.2s;
@@ -177,7 +298,7 @@ const t = computed(() => messages[lang.value] ?? messages.zh)
   cursor: pointer;
 }
 
-.pricing-btn:hover {
+.plan-btn:hover {
   background: var(--vp-c-brand-2);
   border-color: var(--vp-c-brand-2);
 }

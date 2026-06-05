@@ -22,7 +22,24 @@ export default {
               releaseDate: "2026-06-05",
               platforms: "Windows x64",
             }),
-          "home-features-after": () => h(PricingPanel),
+          "home-features-after": () =>
+            h(PricingPanel, {
+              plans: [
+                {
+                  name: { zh: "积分订阅", en: "Points Subscription" },
+                  price: "30",
+                  currency: { zh: "元", en: "RMB" },
+                  points: "3,000",
+                  days: "30",
+                  features: [
+                    { zh: "不限运行实例数", en: "Unlimited Running Instances" },
+                  ],
+                  cta: { zh: "了解详情", en: "Learn More" },
+                  ctaUrl: "#",
+                  featured: true,
+                },
+              ],
+            }),
         });
     },
   }),
