@@ -26,7 +26,7 @@ export default {
             h(PricingPanel, {
               plans: [
                 {
-                  name: { zh: "积分订阅", en: "Points Subscription" },
+                  name: { zh: "专业版（Pro）", en: "Pro Edition" },
                   price: "30",
                   currency: { zh: "元", en: "RMB" },
                   points: "3,000",

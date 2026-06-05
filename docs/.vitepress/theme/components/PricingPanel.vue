@@ -38,12 +38,10 @@
             <div class="plan-price-row">
               <span class="price-amount">{{ plan.price }}</span>
               <span class="price-unit">{{ plan.currency[lang] || plan.currency.zh }}</span>
+              <span class="price-points-sep">·</span>
+              <span class="price-points-value">{{ plan.points }} {{ t.points }}</span>
             </div>
             <div class="plan-duration">/ {{ plan.days }} {{ t.days }}</div>
-            <div class="plan-points">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-              {{ plan.points }} {{ t.points }}
-            </div>
             <ul class="plan-features">
               <li v-for="(feat, j) in plan.features" :key="j">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
@@ -181,26 +179,22 @@ const t = computed(() => messages[lang.value] ?? messages.zh)
   color: var(--vp-c-text-2);
 }
 
+.price-points-sep {
+  font-size: 18px;
+  color: var(--vp-c-text-3);
+  margin: 0 4px;
+}
+
+.price-points-value {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--vp-c-text-2);
+}
+
 .plan-duration {
   font-size: 13px;
   color: var(--vp-c-text-3);
   margin-bottom: 12px;
-}
-
-.plan-points {
-  display: inline-flex;
-  align-items: center;
-  gap: 4px;
-  font-size: 13px;
-  color: var(--vp-c-text-2);
-  background: var(--vp-c-bg-mute);
-  padding: 3px 10px;
-  border-radius: 12px;
-  margin-bottom: 14px;
-}
-
-.plan-points svg {
-  flex-shrink: 0;
 }
 
 .plan-features {
