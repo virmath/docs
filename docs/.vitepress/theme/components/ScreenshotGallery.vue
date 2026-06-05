@@ -1,4 +1,4 @@
-<template>
+﻿<template>
   <div class="screenshot-gallery-wrap">
     <!-- Gallery -->
     <div class="gallery-viewport" ref="viewportRef" @scroll="onScroll">
@@ -72,6 +72,7 @@
 
 <script setup lang="ts">
 import { ref, onMounted, onUnmounted, computed, watch } from "vue"
+import { useData } from "vitepress"
 
 const screenshotModules = import.meta.glob("/public/screenshots/*.{png,jpg,jpeg,webp,gif,bmp}", {
   eager: true,
@@ -81,10 +82,12 @@ const screenshotModules = import.meta.glob("/public/screenshots/*.{png,jpg,jpeg,
 
 interface Screenshot { src: string; alt: string }
 
+const { lang } = useData()
+
 const images = computed<Screenshot[]>(() =>
   Object.entries(screenshotModules)
     .map(([filepath, url]) => ({
-      src: url.replace(/^\/public\//, ""),
+      src: (lang.value === "en" ? "../" : "") + url.replace(/^\/public\//, ""),
       alt: filepath
         .split("/")
         .pop()!
