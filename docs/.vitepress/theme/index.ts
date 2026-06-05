@@ -1,4 +1,4 @@
-import { h, defineComponent } from "vue";
+﻿import { h, defineComponent } from "vue";
 import DefaultTheme from "vitepress/theme";
 import ScreenshotGallery from "./components/ScreenshotGallery.vue";
 import DownloadPanel from "./components/DownloadPanel.vue";
@@ -12,8 +12,8 @@ export default {
     setup() {
       return () =>
         h(DefaultTheme.Layout, null, {
-          "home-hero-info-after": () => h(ScreenshotGallery),
-          "home-hero-after": () =>
+          "home-features-before": () => h(ScreenshotGallery),
+          "home-features-after": () => [
             h(DownloadPanel, {
               downloadUrl: "#",
               chinaDownloadUrl: "#",
@@ -23,7 +23,6 @@ export default {
               releaseDate: "2026-06-05",
               platforms: "Windows x64",
             }),
-          "home-features-after": () => [
             h(PricingPanel, {
               plans: [
                 {
