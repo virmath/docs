@@ -51,6 +51,8 @@
           </div>
         </div>
       </div>
+
+      <p class="pricing-note">{{ t.note }}</p>
     </div>
   </div>
 </template>
@@ -81,6 +83,7 @@ const messages: Record<string, Record<string, string>> = {
     currencyUnit: "元",
     days: "天",
     freeInstanceLabel: "1 个运行实例",
+    note: "充值积分需在软件内注册登录后，在充值页进行",
   },
   en: {
     heading: "Points Subscription",
@@ -90,6 +93,7 @@ const messages: Record<string, Record<string, string>> = {
     currencyUnit: "RMB",
     days: "Days",
     freeInstanceLabel: "1 Running Instance",
+    note: "Points can be recharged in the app after registering and logging in",
   },
 }
 
@@ -218,5 +222,12 @@ const t = computed(() => messages[lang.value] ?? messages.zh)
 .plan-features li svg {
   flex-shrink: 0;
   color: var(--vp-c-brand-1);
+}
+
+.pricing-note {
+  font-size: 12px;
+  color: var(--vp-c-text-3);
+  margin: 20px 0 0;
+  line-height: 1.6;
 }
 </style>
