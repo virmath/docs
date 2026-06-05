@@ -1,8 +1,10 @@
 <template>
   <div class="download-panel">
-    <div class="download-panel-inner">
+    <div class="download-header">
       <h2 class="download-heading">{{ t.heading }}</h2>
-
+      <p class="download-subtitle">{{ t.subtitle }}</p>
+    </div>
+    <div class="download-panel-inner">
       <div class="download-meta">
         <span class="meta-badge version-badge">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
@@ -69,14 +71,16 @@ const { lang } = useData()
 
 const messages: Record<string, Record<string, string>> = {
   zh: {
-    heading: "下载虚数精灵",
+    heading: "下载",
+    subtitle: "获取最新版本",
     downloadNow: "立即下载",
     chinaDownload: "加速下载（中国）",
     viewAll: "查看全部下载",
     changelog: "查看更新日志",
   },
   en: {
-    heading: "Download Virmath Elf",
+    heading: "Download",
+    subtitle: "Get the latest version",
     downloadNow: "Download Now",
     chinaDownload: "Mirror (China)",
     viewAll: "View All Downloads",
@@ -92,22 +96,33 @@ const t = computed(() => messages[lang.value] ?? messages.zh)
   padding: 32px 24px 8px;
 }
 
+.download-header {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
 .download-panel-inner {
   max-width: 720px;
   margin: 0 auto;
   background: var(--vp-c-bg-soft);
   border: 1px solid var(--vp-c-border);
   border-radius: 12px;
-  padding: 32px 28px;
+  padding: 24px 28px 32px;
   text-align: center;
 }
 
 .download-heading {
   font-size: 20px;
   font-weight: 600;
-  margin: 0 0 16px;
+  margin: 0 0 6px;
   color: var(--vp-c-text-1);
   letter-spacing: 0;
+}
+
+.download-subtitle {
+  font-size: 14px;
+  color: var(--vp-c-text-2);
+  margin: 0;
 }
 
 .download-meta {
