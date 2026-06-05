@@ -1,0 +1,4 @@
+﻿/* 收窄首页 hero 底部间距，与 ScreenshotGallery 衔接更紧凑 */
+.VPHomeHero {
+  padding-bottom: 32px !important;
+}

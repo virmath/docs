@@ -194,7 +194,7 @@ onUnmounted(() => {
 .screenshot-gallery-wrap {
   max-width: 720px;
   margin: 0 auto;
-  padding: 8px 24px 0;
+  padding: 0 24px 24px;
 }
 
 .gallery-viewport {

@@ -4,6 +4,7 @@ import ScreenshotGallery from "./components/ScreenshotGallery.vue";
 import DownloadPanel from "./components/DownloadPanel.vue";
 import PricingPanel from "./components/PricingPanel.vue";
 import ContactPanel from "./components/ContactPanel.vue";
+import "./style.css";
 import type { EnhanceAppContext } from "vitepress";
 
 export default {
