@@ -34,9 +34,6 @@ export default {
                   features: [
                     { zh: "不限运行实例数", en: "Unlimited Running Instances" },
                   ],
-                  cta: { zh: "了解详情", en: "Learn More" },
-                  ctaUrl: "#",
-                  featured: true,
                 },
               ],
             }),
