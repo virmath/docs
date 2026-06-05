@@ -1,6 +1,5 @@
 import { defineConfig } from "vitepress";
 
-// https://vitepress.dev/reference/site-config
 export default defineConfig({
   head: [["link", { rel: "icon", href: "/favicon.ico" }]],
   locales: {
@@ -10,26 +9,50 @@ export default defineConfig({
       title: "虚数精灵",
       description: "网站维护中...",
       themeConfig: {
+        i18nRouting: true,
         logo: "/favicon.ico",
-        // https://vitepress.dev/reference/default-theme-config
         nav: [
           { text: "主页", link: "/index" },
-          { text: "公告", link: "/docs/user_manual" },
+          { text: "公告", link: "/docs/announcements" },
         ],
 
-        // sidebar: [
-        //   {
-        //     text: 'Examples',
-        //     items: [
-        //       { text: 'Markdown Examples', link: '/markdown-examples' },
-        //       { text: 'Runtime API Examples', link: '/api-examples' }
-        //     ]
-        //   }
-        // ],
+        sidebar: [
+          {
+            text: '概览',
+            items: [
+              { text: '产品简介', link: '' },
+              { text: '系统要求', link: '' },
+              { text: '全部下载', link: '' },
+              { text: '更新日志', link: '' },
+            ]
+          },
+          {
+            text: '使用指南',
+            items: [
+              { text: '快速入门', link: '' },
+              { text: '基础功能', link: '' },
+              { text: '高级功能', link: '' },
+            ]
+          },
+          {
+            text: '参考',
+            items: [
+              { text: '节点参考', link: '' },
+            ]
+          },
+          {
+            text: '其他',
+            items: [
+              { text: '常见问题 (FAQ)', link: '' },
+              { text: '用户协议', link: '' },
+              { text: '隐私政策', link: '' },
+            ]
+          }
+        ],
 
-        // socialLinks: [
-        //   { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
-        // ],
+        socialLinks: [
+          { icon: 'github', link: 'https://github.com/virmath/docs' }
+        ],
 
         footer: {
           message:
@@ -47,7 +70,7 @@ export default defineConfig({
         // https://vitepress.dev/reference/default-theme-config
         nav: [
           { text: "Home", link: "/en/index" },
-          { text: "Announcement", link: "/en/docs/user_manual" },
+          { text: "Announcement", link: "/en/docs/announcements" },
         ],
 
         // sidebar: [
