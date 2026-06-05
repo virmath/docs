@@ -76,8 +76,8 @@ const { lang } = useData()
 
 const messages: Record<string, Record<string, string>> = {
   zh: {
-    heading: "积分订阅",
-    subtitle: "购买积分兑换订阅特权，按需选择，灵活使用",
+    heading: "订阅方案",
+    subtitle: "选择适合您的方案",
     freeName: "免费",
     points: "积分",
     currencyUnit: "元",
@@ -86,8 +86,8 @@ const messages: Record<string, Record<string, string>> = {
     note: "充值积分需在软件内注册登录后，在充值页进行",
   },
   en: {
-    heading: "Points Subscription",
-    subtitle: "Buy points and redeem subscription privileges – flexible and on-demand",
+    heading: "Subscription Plans",
+    subtitle: "Choose the plan that suits you",
     freeName: "Free",
     points: "Points",
     currencyUnit: "RMB",
