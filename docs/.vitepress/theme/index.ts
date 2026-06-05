@@ -45,6 +45,7 @@ export default {
                 // { number: "xxxxxxxxx", link: "https://qm.qq.com/q/..." },
               ],
               githubLink: "https://github.com/virmath",
+              bilibiliLink: "https://space.bilibili.com/your-uid",
             }),
           ],
         });

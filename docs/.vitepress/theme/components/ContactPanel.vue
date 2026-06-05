@@ -5,27 +5,38 @@
       <p class="contact-subtitle">{{ t.subtitle }}</p>
 
       <div class="contact-items">
-        <a :href="'mailto:' + email" class="contact-item">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 4l-10 8L2 4"/></svg>
-          <span>{{ email }}</span>
-        </a>
+        <!-- Social row: Email + GitHub + Bilibili -->
+        <div class="contact-row">
+          <a :href="'mailto:' + email" class="contact-item">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 4l-10 8L2 4"/></svg>
+            <span>{{ email }}</span>
+          </a>
 
-        <a
-          v-for="(group, i) in qqGroups"
-          :key="i"
-          :href="group.link"
-          class="contact-item"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
-          <span>{{ qqGroupLabel(i) }}: {{ group.number }}</span>
-        </a>
+          <a :href="githubLink" class="contact-item" target="_blank" rel="noopener noreferrer">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            <span>GitHub</span>
+          </a>
 
-        <a :href="githubLink" class="contact-item" target="_blank" rel="noopener noreferrer">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
-          <span>GitHub</span>
-        </a>
+          <a :href="bilibiliLink" class="contact-item" target="_blank" rel="noopener noreferrer">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><polygon points="10,8.5 10,15.5 16,12"/><circle cx="7" cy="2.5" r="2.5"/><circle cx="17" cy="2.5" r="2.5"/></svg>
+            <span>Bilibili</span>
+          </a>
+        </div>
+
+        <!-- QQ groups row -->
+        <div v-if="qqGroups.length" class="contact-row">
+          <a
+            v-for="(group, i) in qqGroups"
+            :key="i"
+            :href="group.link"
+            class="contact-item"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
+            <span>{{ qqGroupLabel(i) }}: {{ group.number }}</span>
+          </a>
+        </div>
       </div>
     </div>
   </div>
@@ -39,10 +50,12 @@ const props = withDefaults(defineProps<{
   email?: string
   qqGroups?: Array<{ number: string; link: string }>
   githubLink?: string
+  bilibiliLink?: string
 }>(), {
   email: 'hello@example.com',
   qqGroups: () => [],
   githubLink: '#',
+  bilibiliLink: '#',
 })
 
 const { lang } = useData()
@@ -96,8 +109,15 @@ function qqGroupLabel(index: number) {
 
 .contact-items {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.contact-row {
+  display: flex;
   justify-content: center;
-  gap: 16px;
+  gap: 12px;
   flex-wrap: wrap;
 }
 
