@@ -39,7 +39,7 @@ export default {
               ],
             }),
             h(ContactPanel, {
-              email: "virmath@outlook.com",
+              email: "contact@virmath.com",
               qqGroups: [
                 { number: "198129874", link: "https://qm.qq.com/q/FEUkJOG5wW" },
               ],

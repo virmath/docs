@@ -7,7 +7,6 @@ export default defineConfig({
       label: "中文",
       lang: "zh",
       title: "虚数精灵",
-      description: "网站维护中...",
       themeConfig: {
         logo: "/favicon.ico",
         nav: [
@@ -64,7 +63,6 @@ export default defineConfig({
       label: "English",
       lang: "en",
       title: "Virmath Elf",
-      description: "网站维护中...",
       themeConfig: {
         logo: "/favicon.ico",
         nav: [
