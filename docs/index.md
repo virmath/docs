@@ -13,10 +13,10 @@ hero:
       link: /docs/user_manual
     - theme: alt
       text: 用户协议
-      link: /docs/user_manual
+      link: /docs/terms-of-service
     - theme: alt
       text: 隐私政策
-      link: /docs/user_manual
+      link: /docs/privacy-policy
 
 features:
   - title: 多源图像采集

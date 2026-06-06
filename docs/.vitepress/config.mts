@@ -9,7 +9,6 @@ export default defineConfig({
       title: "虚数精灵",
       description: "网站维护中...",
       themeConfig: {
-        i18nRouting: true,
         logo: "/favicon.ico",
         nav: [
           { text: "主页", link: "/index" },
@@ -67,25 +66,14 @@ export default defineConfig({
       description: "网站维护中...",
       themeConfig: {
         logo: "/favicon.ico",
-        // https://vitepress.dev/reference/default-theme-config
         nav: [
           { text: "Home", link: "/en/index" },
           { text: "Announcement", link: "/en/docs/announcements" },
         ],
 
-        // sidebar: [
-        //   {
-        //     text: 'Examples',
-        //     items: [
-        //       { text: 'Markdown Examples', link: '/markdown-examples' },
-        //       { text: 'Runtime API Examples', link: '/api-examples' }
-        //     ]
-        //   }
-        // ],
-
-        // socialLinks: [
-        //   { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
-        // ],
+        socialLinks: [
+          { icon: 'github', link: 'https://github.com/virmath/docs' }
+        ],
 
         footer: {
           message:

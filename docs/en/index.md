@@ -12,10 +12,10 @@ hero:
       link: /en/docs/user_manual
     - theme: alt
       text: Terms of Service
-      link: /en/docs/user_manual
+      link: /en/docs/terms-of-service
     - theme: alt
       text: Privacy Policy
-      link: /en/docs/user_manual
+      link: /en/docs/privacy-policy
 
 features:
   - title: Multi-Source Image Capture
