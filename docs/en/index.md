@@ -8,8 +8,8 @@ hero:
   tagline: A visual script editor for easily creating automation workflows
   actions:
     - theme: brand
-      text: Documentation
-      link: /en/docs/user_manual
+      text: Quick Start
+      link: /en/docs/quick-start
     - theme: alt
       text: Terms of Service
       link: /en/docs/terms-of-service

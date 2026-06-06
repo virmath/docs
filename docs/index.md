@@ -9,8 +9,8 @@ hero:
   tagline: 一款可视化脚本编辑器，轻松创建自动化流程
   actions:
     - theme: brand
-      text: 使用文档
-      link: /docs/user_manual
+      text: 快速入门
+      link: /docs/quick-start
     - theme: alt
       text: 用户协议
       link: /docs/terms-of-service
