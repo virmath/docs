@@ -12,13 +12,15 @@ We take your privacy and the protection of your personal information very seriou
 
 "Personal information" as used in this Policy refers to any information recorded electronically or by other means that relates to an identified or identifiable natural person, excluding information that has been anonymized.
 
+For personal information processing activities that require your separate consent under applicable law (including but not limited to processing sensitive personal information, providing your personal information to other data processors, and transferring personal information abroad), we will separately obtain your separate consent through pop-up notifications or similar means.
+
 ## 2. Information We Collect
 
 In the course of your use of the Service, we may collect the following types of information:
 
 ### 2.1 Information You Voluntarily Provide
 
-(1) **Registration Information**: When you register an account, we will collect your username, email address, password, and similar information.
+(1) **Registration Information**: When you register an account, we will collect your username, email address, and password encrypted with hashing algorithms, and similar information. (Passwords are stored in encrypted hash form; we do not store your password in plain text.)
 
 (2) **Profile Information**: You may choose to complete your profile with information such as an avatar, nickname, and personal bio.
 
@@ -34,7 +36,7 @@ In the course of your use of the Service, we may collect the following types of 
 
 ### 2.3 Payment Information
 
-When you purchase credits, the payment process is handled by third-party payment platforms (such as Alipay, WeChat Pay, etc.). We do not directly collect or store sensitive payment information such as your bank card number or payment password. We only obtain and store the payment result (e.g., payment success/failure status, payment time, payment amount) and other information necessary for order processing.
+When you purchase credits, the payment process is handled by third-party payment platforms (such as Alipay, WeChat Pay, etc.). We do not directly collect or store sensitive payment information such as your bank card number or payment password. We only obtain and store the payment result (e.g., payment success/failure status, payment time, payment amount) and other information necessary for order processing. These third-party payment platforms will independently process your payment information in accordance with their own privacy policies. We recommend that you review the relevant platform's privacy policy to understand their information processing rules.
 
 ### 2.4 Project Content Data
 
@@ -64,7 +66,7 @@ Your personal information will be stored on servers located within the People's 
 
 ### 4.2 Storage Period
 
-We will retain your personal information only for as long as necessary to fulfill the purposes described in this Policy, unless otherwise required by law. When you delete your account or after the Service is terminated, we will delete or anonymize your personal information.
+We will retain your personal information only for as long as necessary to fulfill the purposes described in this Policy, unless otherwise required by law. When you delete your account or after the Service is terminated, we will delete or anonymize your personal information. Data that is required by applicable law to be retained (such as transaction records, financial vouchers, etc.) will be kept for the legally mandated retention period and will be deleted or anonymized promptly after such period expires.
 
 ### 4.3 Security Measures
 
@@ -78,6 +80,10 @@ We employ industry-standard security technologies and organizational measures to
 
 Despite the reasonable measures described above, **please note that no security measure can provide absolute protection for your information.**
 
+### 4.4 Security Incident Response
+
+If a security incident involving the leakage, tampering, or loss of personal information occurs or is likely to occur, we will immediately initiate our emergency response plan, take remedial measures, and report to the relevant authorities as required by law. If the security incident is likely to have a significant impact on your rights and interests, we will notify you in a timely manner through in-platform messages, email, or phone, informing you of the basic facts and potential impact of the incident, the remedial measures we have taken or will take, and recommendations for measures you can take on your own to mitigate risks.
+
 ## 5. Information Sharing and Disclosure
 
 ### 5.1 Information Sharing
@@ -89,6 +95,8 @@ We do not sell your personal information to any third party. We may share your i
 (2) **Legal Requirements**: We may disclose your information when necessary to comply with applicable laws, legal processes, or government requests.
 
 (3) **Business Transfers**: In the event of a merger, acquisition, asset transfer, or similar transaction, your information may be transferred as part of the transaction assets. We will notify you in advance and ensure that the recipient continues to be bound by this Policy.
+
+Where circumstances have a significant impact on your rights and interests, such as providing personal information to third parties, processing sensitive personal information, or transferring personal information abroad, we will conduct a personal information protection impact assessment in advance in accordance with applicable law and implement corresponding protective measures.
 
 ### 5.2 Exceptions to Non-Sharing
 
@@ -114,7 +122,7 @@ In accordance with applicable laws and regulations, you have the following right
 
 (6) **Account Deletion**: You may apply to delete your account by contacting us. Upon deletion, we will delete or anonymize your personal information, unless otherwise required by law.
 
-To exercise any of the above rights, you may contact us using the information provided at the end of this Policy. We will respond to your request within 15 business days of receiving it.
+To exercise any of the above rights, you may contact us using the information provided at the end of this Policy. We will generally respond to your request within 15 business days of receiving it. If an extension is needed due to the complexity of the request, we will inform you of the reason and the expected timeline, but in no event shall the response exceed 30 business days.
 
 ## 7. Cookies and Similar Technologies
 
@@ -140,7 +148,7 @@ You may manage or disable cookies in your browser settings. **Please note, howev
 
 9.2 Revised policies will be posted on the Platform by means of announcements, pop-up notifications, or similar methods. For material changes, we will also notify you through more prominent means (such as sending an email or pop-up notification).
 
-9.3 **Your continued use of the Service after a policy update constitutes your acceptance of the revised policy. If you do not agree with the updated content, please stop using the Service.**
+9.3 **Your continued use of the Service after a policy update constitutes your acceptance of the revised policy. If you do not agree with the updated content, please stop using the Service. If the policy update involves changes to the purpose, method, or categories of personal information processing, we will re-obtain your explicit consent through pop-up notifications or similar means.**
 
 ## 10. Contact Us
 
@@ -150,7 +158,3 @@ If you have any questions, comments, or suggestions regarding this Policy, or wi
 - Address: Room 10, Building 2, Shengshi Boyue Mansion, No. 366 Minsheng Road, Gangbei District, Guigang City, Guangxi, China
 
 We will address your concerns promptly, typically within 15 business days.
-
----
-
-*This Privacy Policy is provided by the Platform. We recommend that you consult with a professional attorney before use to ensure that the Policy meets your specific business needs and applicable legal requirements.*

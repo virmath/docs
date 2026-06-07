@@ -10,7 +10,7 @@
 
 1.2 Please read the entire content of this Agreement carefully before using the Service. By registering an account, logging in, or using the Service, you confirm that you have fully read, understood, and agreed to be bound by all terms of this Agreement. If you do not agree with any part of this Agreement, please immediately cease registration or use of the Service.
 
-1.3 We reserve the right to revise the terms of this Agreement from time to time as needed. Revised agreements will be posted on the Platform. If you continue to use the Service, you will be deemed to have accepted the revised Agreement. If you do not agree with the revisions, you should stop using the Service.
+1.3 We reserve the right to revise the terms of this Agreement from time to time as needed. For non-material changes, the revised Agreement will be posted on the Platform, and your continued use of the Service will constitute your acceptance of the revised Agreement. For matters involving material changes to your rights and obligations, service fees, or core functionalities, we will publicly solicit comments on the homepage of the Platform at least seven days prior to implementation, notify you in advance through prominent means such as pop-up notifications or email, and require your explicit consent before the changes take effect. If you do not agree with the revisions, please stop using the Service.
 
 ## 2. Definitions
 
@@ -38,11 +38,11 @@ Unless otherwise expressly defined in this Agreement, the following terms shall 
 
 3.2.2 If you become aware of any unauthorized use of your account, you shall notify us immediately. **We shall not be liable for any losses resulting from your failure to properly safeguard your account credentials.**
 
-3.2.3 **Each User may register only one account. If a single User registers multiple accounts, we reserve the right to merge or take action regarding such accounts.**
+3.2.3 **Unless there is a legitimate need, each User should generally register only one account. Bulk registration of accounts through automated means or other methods is prohibited. If malicious bulk registration is discovered, we reserve the right to merge such accounts or take other necessary measures.**
 
 ### 3.3 Account Deletion
 
-You have the right to apply for deletion of your account at any time. **Upon account deletion, all of your data will be deleted or anonymized, and any purchased Credits or redeemed Subscription Services will not be refunded or compensated.**
+You have the right to apply for deletion of your account at any time. **Upon account deletion, your relevant data will be deleted or anonymized (except for information required by applicable laws and regulations to be retained), and any purchased Credits or redeemed Subscription Services will not be refunded or compensated.**
 
 ## 4. Credit System
 
@@ -64,17 +64,17 @@ You have the right to apply for deletion of your account at any time. **Upon acc
 
 ### 4.3 Validity Period
 
-4.3.1 Credits purchased through payment channels shall be valid for 365 days from the date of purchase. **Any unused Credits upon expiration will be automatically forfeited without compensation.**
+4.3.1 Credits purchased through payment channels shall be valid for 365 days from the date of purchase. **Any unused Credits upon expiration will be automatically forfeited without compensation.** If you are unable to use Credits before expiration due to technical issues on the Platform's part, please contact us and we will provide a reasonable resolution.
 
 4.3.2 The validity period of Credits obtained through promotions or rewards shall be governed by the applicable promotion rules.
 
 ### 4.4 Refund Policy
 
-4.4.1 **Once purchased, Credits are generally non-refundable, non-exchangeable, and non-convertible to cash.**
+4.4.1 **Once purchased, Credits are generally non-refundable, non-exchangeable, and non-convertible to cash. However, if you are unable to use Credits due to reasons attributable to the Platform (including but not limited to the Platform discontinuing operations or technical failures preventing normal service provision), we will provide reasonable solutions, including but not limited to refunds or equivalent service compensation.**
 
 4.4.2 If, due to technical reasons on the Platform's part, Credits are not credited to your account in a timely manner after purchase, or if the Platform discontinues its credit system for its own reasons, we will provide reasonable solutions, including but not limited to refunds or equivalent service compensation.
 
-4.4.3 **If your account is frozen or deleted due to a violation of this Agreement, any remaining Credits will be automatically forfeited without refund.**
+4.4.3 **If your account is frozen or deleted due to a serious violation of this Agreement, any remaining Credits will be automatically forfeited without refund. For minor violations, we will prioritize warnings or feature restrictions rather than directly forfeiting Credits.**
 
 ## 5. Subscription Services
 
@@ -109,7 +109,7 @@ Principal subscription features may include, but are not limited to:
 
 5.4.1 **Once a Subscription Service has been redeemed, the Credits consumed are non-refundable.**
 
-5.4.2 **If a User violates this Agreement, we have the right to immediately terminate the User's Subscription Service without further notice, and the Credits consumed will not be refunded.**
+5.4.2 **If a User seriously violates this Agreement, we have the right to immediately terminate the User's Subscription Service without further notice, and the Credits consumed will not be refunded. For minor violations, we will prioritize warnings or feature restrictions.**
 
 ## 6. User Conduct
 
@@ -133,30 +133,32 @@ Principal subscription features may include, but are not limited to:
 
 7.1 The intellectual property rights (including but not limited to copyrights, trademarks, patents, and trade secrets) in all content of the Platform software, including technology, interface design, icons, text, images, audio, and video, belong to us or our licensors and are protected by applicable law.
 
-7.2 The intellectual property rights in the output you create using this tool, such as scripts and project files, belong to you. However, you grant us a worldwide, royalty-free, non-exclusive license to provide technical services such as storage, backup, and display.
+7.2 The intellectual property rights in the output you create using this tool, such as scripts and project files, belong to you. For the purpose of providing the Service to you, you grant us a non-exclusive license for the duration of the Service to provide technical services such as storage, backup, and display. We will not use your output for any purposes other than those necessary to provide the Service to you.
 
 7.3 Without our written permission, you may not copy, modify, distribute, sell, or otherwise exploit any part of the Platform.
 
 ## 8. Disclaimer
 
-8.1 **The Service is provided on an "as is" and "as available" basis. We make no express or implied warranties, including but not limited to:**
+8.1 **To the maximum extent permitted by applicable law, the Service is provided on an "as is" and "as available" basis. We make no express or implied warranties, including but not limited to:**
 - **The Service will meet all of your requirements;**
 - **The Service will be timely, uninterrupted, secure, or error-free;**
 - **Any results obtained through the Service will be accurate or reliable.**
 
-8.2 **You understand and agree that we shall not be liable for losses arising from the following circumstances:**
+8.2 **To the maximum extent permitted by applicable law, you understand and agree that we shall not be liable for losses arising from the following circumstances:**
 - **Force majeure events (including but not limited to natural disasters, war, government action, network outages, server failures, etc.);**
 - **Issues with third-party services (including but not limited to payment gateways, cloud service providers, etc.);**
 - **Consequences resulting from your own improper operation or violation of this Agreement;**
 - **Any disputes or legal liabilities arising from content you develop using this tool.**
 
+**This clause does not exclude our liability arising from willful misconduct or gross negligence that causes your losses, as required by applicable law.**
+
 ## 9. Service Modification and Termination
 
-9.1 **We have the right to adjust, suspend, or terminate all or part of the Service at any time based on operational needs, and will notify Users by announcement within a reasonable period.**
+9.1 **We have the right to adjust, suspend, or terminate all or part of the Service based on operational needs. If we decide to terminate the Service, we will publish relevant information prominently on the Platform homepage thirty days in advance. Where advance notice is not possible due to emergency circumstances (including but not limited to security vulnerabilities, legal requirements, etc.), we will provide as much advance notice as practicable under the circumstances.**
 
 9.2 **We have the right to unilaterally suspend or terminate the provision of the Service to any User who violates this Agreement, without assuming any liability.**
 
-9.3 **Upon termination of this Agreement, your account and related data will be deleted, and any Credits and Subscription Services you have obtained will automatically lapse.**
+9.3 **Upon termination of this Agreement, your account and related data will be deleted (except for information required by applicable laws and regulations to be retained), and any Credits and Subscription Services you have obtained will automatically lapse.**
 
 ## 10. Dispute Resolution
 
@@ -176,7 +178,3 @@ Principal subscription features may include, but are not limited to:
 
 - Email: contact@virmath.com
 - Address: Room 10, Building 2, Shengshi Boyue Mansion, No. 366 Minsheng Road, Gangbei District, Guigang City, Guangxi, China
-
----
-
-*This Agreement is provided by the Platform. We recommend that you consult with a professional attorney before use to ensure that the Agreement meets your specific business needs and applicable legal requirements.*
