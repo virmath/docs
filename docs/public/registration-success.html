@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>注册成功 - Registration Successful</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+        }
+
+        body {
+            max-width: 440px;
+            margin: 80px auto;
+            padding: 0 20px;
+            background: #f8f9fa;
+        }
+
+        .card {
+            background: white;
+            padding: 40px 32px;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+            text-align: center;
+        }
+
+        .icon-check {
+            width: 64px;
+            height: 64px;
+            margin: 0 auto 20px;
+            background: #e6f7ef;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .icon-check svg {
+            width: 32px;
+            height: 32px;
+        }
+
+        h2 {
+            font-size: 22px;
+            color: #1a1a1a;
+            margin-bottom: 8px;
+        }
+
+        .sub {
+            font-size: 14px;
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 28px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 36px;
+            background: #0071e3;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background 0.2s;
+        }
+
+        .btn:hover {
+            background: #0062c4;
+        }
+
+        .lang-switch {
+            text-align: right;
+            margin-bottom: 16px;
+        }
+
+        .lang-switch button {
+            width: auto;
+            padding: 6px 12px;
+            font-size: 14px;
+            background: none;
+            color: #0071e3;
+            border: 1px solid #0071e3;
+            cursor: pointer;
+        }
+
+        .lang-switch button.active {
+            background: #0071e3;
+            color: white;
+        }
+
+        .lang-switch button:first-child {
+            border-radius: 4px 0 0 4px;
+        }
+
+        .lang-switch button:last-child {
+            border-radius: 0 4px 4px 0;
+            margin-left: -1px;
+        }
+
+        .actions {
+            margin-top: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <div class="lang-switch">
+            <button id="btn-zh" class="active">中文</button>
+            <button id="btn-en">English</button>
+        </div>
+
+        <div class="icon-check">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#0d8f67" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"/>
+            </svg>
+        </div>
+
+        <h2 id="title">注册成功</h2>
+        <p class="sub" id="subtitle">您的账号已创建成功，请打开软件登录使用。</p>
+
+        <div class="actions">
+            <a class="btn" id="btnHome" href="/">返回首页</a>
+        </div>
+    </div>
+
+    <script>
+        const i18n = {
+            zh: {
+                title: "注册成功",
+                subtitle: "您的账号已创建成功，请打开软件登录使用。",
+                btnHome: "返回首页",
+            },
+            en: {
+                title: "Registration Successful",
+                subtitle: "Your account has been created successfully. Please open the app to log in.",
+                btnHome: "Back to Home",
+            }
+        };
+
+        let currentLang = "zh";
+
+        window.addEventListener("DOMContentLoaded", () => {
+            const urlParams = new URLSearchParams(window.location.search);
+            const lang = urlParams.get("lang");
+            if (lang === "en") switchLang("en");
+            else switchLang("zh");
+        });
+
+        function switchLang(lang) {
+            currentLang = lang;
+            document.documentElement.lang = lang;
+
+            const t = i18n[lang];
+            document.getElementById("title").innerText = t.title;
+            document.getElementById("subtitle").innerText = t.subtitle;
+            document.getElementById("btnHome").innerText = t.btnHome;
+
+            document.getElementById("btn-zh").classList.toggle("active", lang === "zh");
+            document.getElementById("btn-en").classList.toggle("active", lang === "en");
+
+            const url = new URL(window.location);
+            url.searchParams.set("lang", lang);
+            history.replaceState({}, "", url);
+        }
+
+        document.getElementById("btn-zh").onclick = () => switchLang("zh");
+        document.getElementById("btn-en").onclick = () => switchLang("en");
+    </script>
+</body>
+
+</html>
