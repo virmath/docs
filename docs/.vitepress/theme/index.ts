@@ -27,7 +27,7 @@ export default {
             h(PricingPanel, {
               plans: [
                 {
-                  name: { zh: "专业版（Pro）", en: "Pro Edition" },
+                  name: { zh: "增强版（Plus）", en: "Plus Edition" },
                   price: "30",
                   currency: { zh: "元", en: "RMB" },
                   points: "3,000",
@@ -43,7 +43,7 @@ export default {
               qqGroups: [
                 { number: "198129874", link: "https://qm.qq.com/q/FEUkJOG5wW" },
               ],
-              githubLink: "https://github.com/virmath/docs",
+              // githubLink: "https://github.com/virmath/docs",
               // bilibiliLink: "https://space.bilibili.com/your-uid",
             }),
           ],

@@ -50,7 +50,7 @@ export default defineConfig({
         ],
 
         socialLinks: [
-          { icon: 'github', link: 'https://github.com/virmath/docs' }
+          // { icon: 'github', link: 'https://github.com/virmath/docs' }
         ],
 
         footer: {
@@ -106,7 +106,7 @@ export default defineConfig({
         ],
 
         socialLinks: [
-          { icon: 'github', link: 'https://github.com/virmath/docs' }
+          // { icon: 'github', link: 'https://github.com/virmath/docs' }
         ],
 
         footer: {

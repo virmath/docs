@@ -83,7 +83,7 @@ const messages: Record<string, Record<string, string>> = {
     currencyUnit: "元",
     days: "天",
     freeInstanceLabel: "1 个运行实例",
-    note: "充值积分需在软件内注册登录后，在充值页进行",
+    note: "积分充值需在软件内注册登录后在充值页进行",
   },
   en: {
     heading: "Subscription Plans",
