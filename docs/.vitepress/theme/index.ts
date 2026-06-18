@@ -16,8 +16,8 @@ export default {
           "home-features-before": () => h(ScreenshotGallery),
           "home-features-after": () => [
             h(DownloadPanel, {
-              downloadUrl: "https://github.com/virmath/docs/releases/download/v1.0.0-beta.0/Virmath-Elf-1.0.0-beta.0-win-x64-setup.exe",
-              chinaDownloadUrl: "https://gh-proxy.org/https://github.com/virmath/docs/releases/download/v1.0.0-beta.0/Virmath-Elf-1.0.0-beta.0-win-x64-setup.exe",
+              downloadUrl: "https://github.com/virmath/docs/releases/download/v1.0.0-beta.0/Virmath-Elf-v1.0.0-beta.0-win-x64-setup.exe",
+              chinaDownloadUrl: "https://gh-proxy.org/https://github.com/virmath/docs/releases/download/v1.0.0-beta.0/Virmath-Elf-v1.0.0-beta.0-win-x64-setup.exe",
               allDownloadsUrl: "/downloads",
               changelogUrl: "/changelog",
               version: "v1.0.0-beta.0",
