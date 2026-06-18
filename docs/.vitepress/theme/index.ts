@@ -20,9 +20,9 @@ export default {
               chinaDownloadUrl: "#",
               allDownloadsUrl: "/downloads",
               changelogUrl: "/changelog",
-              version: "v1.0.0",
-              releaseDate: "2026-06-05",
-              platforms: "Windows x64",
+              version: "v1.0.0-beta.0",
+              releaseDate: "2026-06-19",
+              platforms: "Windows 10 x64",
             }),
             h(PricingPanel, {
               plans: [
