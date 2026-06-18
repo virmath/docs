@@ -83,7 +83,7 @@ const messages: Record<string, Record<string, string>> = {
     currencyUnit: "元",
     days: "天",
     freeInstanceLabel: "1 个运行实例",
-    note: "积分充值需在软件内注册登录后在充值页进行",
+    note: "积分充值请登录软件客户端，在充值页完成操作。",
   },
   en: {
     heading: "Subscription Plans",
@@ -93,7 +93,7 @@ const messages: Record<string, Record<string, string>> = {
     currencyUnit: "RMB",
     days: "Days",
     freeInstanceLabel: "1 Running Instance",
-    note: "Points can be recharged in the app after registering and logging in",
+    note: "To recharge your points, please log in to the app and go to the recharge page to finish the purchase.",
   },
 }
 
