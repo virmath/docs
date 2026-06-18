@@ -3,64 +3,42 @@
     <!-- Gallery -->
     <div class="gallery-viewport" ref="viewportRef" @scroll="onScroll">
       <div class="gallery-track">
-        <div
-          v-for="(img, i) in images"
-          :key="i"
-          class="gallery-card"
-          role="button"
-          tabindex="0"
-          :aria-label="'查看大图：' + img.alt"
-          @click="openLightbox(i)"
-          @keydown.enter="openLightbox(i)"
-          @keydown.space.prevent="openLightbox(i)"
-        >
+        <div v-for="(img, i) in images" :key="i" class="gallery-card" role="button" tabindex="0"
+          :aria-label="'查看大图：' + img.alt" @click="openLightbox(i)" @keydown.enter="openLightbox(i)"
+          @keydown.space.prevent="openLightbox(i)">
           <img :src="img.src" :alt="img.alt" loading="lazy" class="gallery-img" />
         </div>
       </div>
     </div>
     <div class="gallery-dots">
-      <button
-        v-for="(_, i) in images"
-        :key="i"
-        class="dot"
-        :class="{ active: current === i }"
-        @click="goTo(i)"
-        :aria-label="'第 ' + (i + 1) + ' 张截图'"
-      />
+      <button v-for="(_, i) in images" :key="i" class="dot" :class="{ active: current === i }" @click="goTo(i)"
+        :aria-label="'第 ' + (i + 1) + ' 张截图'" />
     </div>
   </div>
 
   <!-- Lightbox -->
   <Teleport to="body">
-    <div
-      v-if="lightboxIndex !== null"
-      class="lightbox-overlay"
-      @click.self="closeLightbox"
-    >
-      <button
-        class="lightbox-close"
-        @click="closeLightbox"
-        aria-label="关闭大图"
-      >
-        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    <div v-if="lightboxIndex !== null" class="lightbox-overlay" @click.self="closeLightbox">
+      <button class="lightbox-close" @click="closeLightbox" aria-label="关闭大图">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18" />
+          <line x1="6" y1="6" x2="18" y2="18" />
+        </svg>
       </button>
 
-      <button
-        v-if="images.length > 1"
-        class="lightbox-nav lightbox-prev"
-        @click="prevImage"
-        aria-label="上一张"
-      >
-        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+      <button v-if="images.length > 1" class="lightbox-nav lightbox-prev" @click="prevImage" aria-label="上一张">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="15 18 9 12 15 6" />
+        </svg>
       </button>
 
-      <button
-        v-if="images.length > 1"
-        class="lightbox-nav lightbox-next"
-        @click="nextImage"
-        aria-label="下一张"
-      >
-        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+      <button v-if="images.length > 1" class="lightbox-nav lightbox-next" @click="nextImage" aria-label="下一张">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="9 18 15 12 9 6" />
+        </svg>
       </button>
 
       <div class="lightbox-content">
@@ -87,7 +65,7 @@ const { lang } = useData()
 const images = computed<Screenshot[]>(() =>
   Object.entries(screenshotModules)
     .map(([filepath, url]) => ({
-      src: (lang.value === "en" ? "../" : "") + url.replace(/^\/public\//, ""),
+      src: (lang.value === "en" ? (import.meta.env.DEV ? "../" : "..") : "") + url.replace(/^\/public\//, ""),
       alt: filepath
         .split("/")
         .pop()!
