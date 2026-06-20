@@ -15,6 +15,8 @@ export default defineConfig({
           { text: "文档", link: "/docs/introduction" },
         ],
 
+        outline: 'deep',
+
         sidebar: [
           {
             text: '概览',
