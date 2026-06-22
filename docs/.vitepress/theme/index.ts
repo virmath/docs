@@ -1,4 +1,4 @@
-﻿import { h, defineComponent } from "vue";
+import { h, defineComponent } from "vue";
 import DefaultTheme from "vitepress/theme";
 import ScreenshotGallery from "./components/ScreenshotGallery.vue";
 import DownloadPanel from "./components/DownloadPanel.vue";
@@ -16,12 +16,12 @@ export default {
           "home-features-before": () => h(ScreenshotGallery),
           "home-features-after": () => [
             h(DownloadPanel, {
-              downloadUrl: "https://github.com/virmath/docs/releases/download/v1.0.0-beta.0/Virmath-Elf-v1.0.0-beta.0-win-x64-setup.exe",
-              chinaDownloadUrl: "https://gh-proxy.org/https://github.com/virmath/docs/releases/download/v1.0.0-beta.0/Virmath-Elf-v1.0.0-beta.0-win-x64-setup.exe",
+              downloadUrl: "https://github.com/virmath/docs/releases/download/v1.0.0-beta.1/Virmath-Elf-v1.0.0-beta.1-win-x64-setup.exe",
+              chinaDownloadUrl: "https://gh-proxy.org/https://github.com/virmath/docs/releases/download/v1.0.0-beta.1/Virmath-Elf-v1.0.0-beta.1-win-x64-setup.exe",
               allDownloadsUrl: "/downloads",
               changelogUrl: "/changelog",
-              version: "v1.0.0-beta.0",
-              releaseDate: "2026-06-19",
+              version: "v1.0.0-beta.1",
+              releaseDate: "2026-06-22",
               platforms: "Windows 10 x64",
             }),
             h(PricingPanel, {
