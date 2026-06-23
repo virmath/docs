@@ -18,8 +18,8 @@ export default {
             h(DownloadPanel, {
               downloadUrl: "https://github.com/virmath/docs/releases/download/v1.0.0-beta.1/Virmath-Elf-v1.0.0-beta.1-win-x64-setup.exe",
               chinaDownloadUrl: "https://gh-proxy.org/https://github.com/virmath/docs/releases/download/v1.0.0-beta.1/Virmath-Elf-v1.0.0-beta.1-win-x64-setup.exe",
-              allDownloadsUrl: "/downloads",
-              changelogUrl: "/changelog",
+              allDownloadsUrl: "docs/downloads",
+              changelogUrl: "docs/changelog",
               version: "v1.0.0-beta.1",
               releaseDate: "2026-06-22",
               platforms: "Windows 10 x64",
