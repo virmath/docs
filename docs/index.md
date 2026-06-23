@@ -11,12 +11,9 @@ hero:
     - theme: brand
       text: 快速入门
       link: /docs/quick-start
-    # - theme: alt
-    #   text: 用户协议
-    #   link: /docs/terms-of-service
-    # - theme: alt
-    #   text: 隐私政策
-    #   link: /docs/privacy-policy
+    - theme: alt
+      text: 节点参考
+      link: /docs/node-reference
 
 features:
   - title: 多源图像采集

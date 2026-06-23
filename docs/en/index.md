@@ -10,12 +10,9 @@ hero:
     - theme: brand
       text: Quick Start
       link: /en/docs/quick-start
-    # - theme: alt
-    #   text: Terms of Service
-    #   link: /en/docs/terms-of-service
-    # - theme: alt
-    #   text: Privacy Policy
-    #   link: /en/docs/privacy-policy
+    - theme: alt
+      text: Node Reference
+      link: /en/docs/node-reference
 
 features:
   - title: Multi-Source Image Capture
