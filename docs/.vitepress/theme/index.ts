@@ -22,7 +22,7 @@ export default {
               changelogUrl: "docs/changelog",
               version: "v1.0.0-beta.2",
               releaseDate: "2026-06-25",
-              platforms: "Windows 10 x64",
+              platforms: "Windows 10 22H2 x64",
             }),
             h(PricingPanel, {
               plans: [
