@@ -1,6 +1,9 @@
 import { defineConfig } from "vitepress";
 
 export default defineConfig({
+  markdown: {
+    math: true
+  },
   head: [["link", { rel: "icon", href: "/favicon.ico" }]],
   locales: {
     root: {
