@@ -123,9 +123,9 @@ Principal subscription features may include, but are not limited to:
 - Scripts used for network attacks, data theft, fraud, or other illegal purposes;
 - Other content prohibited by applicable laws and regulations.
 
-6.3 It is strictly prohibited to use this software for malicious interference with target systems or activities that violate laws and regulations. Users are solely responsible for their own actions, and we shall not bear any direct or indirect losses arising therefrom.
+6.3 **It is strictly prohibited to use this software for malicious interference with target systems or activities that violate laws and regulations. Users are solely responsible for their own actions, and we shall not bear any direct or indirect losses arising therefrom.**
 
-6.4 Using this software may violate the terms of service or agreements of relevant service providers. All risks and legal liabilities arising therefrom, including but not limited to account suspension, data loss, and feature restrictions, shall be borne solely by the User.
+6.4 **Using this software may violate the terms of service or agreements of relevant service providers. All risks and legal liabilities arising therefrom, including but not limited to account suspension, data loss, and feature restrictions, shall be borne solely by the User.**
 
 6.5 **You shall not reverse engineer, decompile, disassemble, crack, or otherwise attempt to derive the source code of the Platform software.**
 
