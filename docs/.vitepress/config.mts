@@ -34,8 +34,7 @@ export default defineConfig({
             text: '使用指南',
             items: [
               { text: '快速入门', link: '/docs/quick-start' },
-              { text: '基础功能', link: '/docs/basic-features' },
-              { text: '高级功能', link: '/docs/advanced-features' },
+              { text: '核心功能', link: '/docs/core-features' },
             ]
           },
           {
@@ -90,8 +89,7 @@ export default defineConfig({
             text: 'User Guide',
             items: [
               { text: 'Quick Start', link: '/en/docs/quick-start' },
-              { text: 'Basic Features', link: '/en/docs/basic-features' },
-              { text: 'Advanced Features', link: '/en/docs/advanced-features' },
+              { text: 'Core Features', link: '/en/docs/core-features' },
             ]
           },
           {
