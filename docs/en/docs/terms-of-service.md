@@ -1,6 +1,6 @@
 # Terms of Service
 
-**Last Updated: June 6, 2026**
+**Last Updated: July 2, 2026**
 
 > **Disclaimer:** This English translation of the Terms of Service is provided for reference purposes only. In case of any discrepancy between the Chinese version and the English version, the Chinese version shall prevail. 本用户协议英文版仅供参考。如中英文版本有任何不一致之处，以中文版为准。
 
@@ -123,11 +123,15 @@ Principal subscription features may include, but are not limited to:
 - Scripts used for network attacks, data theft, fraud, or other illegal purposes;
 - Other content prohibited by applicable laws and regulations.
 
-6.3 **You shall not reverse engineer, decompile, disassemble, crack, or otherwise attempt to derive the source code of the Platform software.**
+6.3 It is strictly prohibited to use this software for malicious interference with target systems or activities that violate laws and regulations. Users are solely responsible for their own actions, and we shall not bear any direct or indirect losses arising therefrom.
 
-6.4 **You shall not use any automated means (including but not limited to scripts, crawlers, bots, etc.) to register accounts in bulk, purchase Credits, or engage in any other conduct that may affect the normal operation of the Platform.**
+6.4 Using this software may violate the terms of service or agreements of relevant service providers. All risks and legal liabilities arising therefrom, including but not limited to account suspension, data loss, and feature restrictions, shall be borne solely by the User.
 
-6.5 If you violate the above conduct rules, we have the right to take measures including warnings, feature restrictions, account freezing, service termination, and we reserve the right to pursue legal liability.
+6.5 **You shall not reverse engineer, decompile, disassemble, crack, or otherwise attempt to derive the source code of the Platform software.**
+
+6.6 **You shall not use any automated means (including but not limited to scripts, crawlers, bots, etc.) to register accounts in bulk, purchase Credits, or engage in any other conduct that may affect the normal operation of the Platform.**
+
+6.7 If you violate the above conduct rules, we have the right to take measures including warnings, feature restrictions, account freezing, service termination, and we reserve the right to pursue legal liability.
 
 ## 7. Intellectual Property
 
