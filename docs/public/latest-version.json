@@ -1,12 +1,12 @@
 {
     "release": {
         "version": "0.0.0",
-        "download_url": "https://virmath.com",
-        "update_log": ""
+        "downloadUrl": "https://virmath.com",
+        "updateLog": ""
     },
     "dev": {
         "version": "1.0.0-beta.4",
-        "download_url": "https://virmath.com",
-        "update_log": ""
+        "downloadUrl": "https://virmath.com",
+        "updateLog": ""
     }
 }
