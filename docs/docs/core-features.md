@@ -1420,4 +1420,1018 @@
 
 ## 对象识别
 
+![](core-features/PixPin_2026-07-03_19-35-32.webp)
+
+::: details JSON
+```json:line-numbers
+{
+  "format": "VirmathElf",
+  "version": 8,
+  "nodes": [
+    {
+      "$type": "End",
+      "id": "019f27be-9f7a-7287-bcda-55750813a6f4",
+      "programId": "019f0886-6943-76f7-a6d3-51011cbd8d63",
+      "location": {
+        "x": 240,
+        "y": 690
+      },
+      "size": {
+        "width": 90.66666666666667,
+        "height": 58.666666666666664
+      },
+      "inputs": [
+        {
+          "$type": "Order",
+          "value": null,
+          "id": "019f27be-9f7a-7d00-ad14-b1acd940155a",
+          "programId": "019f0886-6943-76f7-a6d3-51011cbd8d63",
+          "nodeId": "019f27be-9f7a-7287-bcda-55750813a6f4",
+          "optionId": "00000000-0000-0000-0000-000000000000",
+          "optionIndex": 0,
+          "usageType": 1,
+          "connections": [
+            "019f27be-9f7a-7a73-ad06-f4fdda11bdc4"
+          ],
+          "anchor": {
+            "x": 257,
+            "y": 732.3333333333334
+          },
+          "isConnected": true,
+          "layoutOrientation": 0,
+          "valueEditor": null
+        }
+      ],
+      "outputs": []
+    },
+    {
+      "$type": "Log",
+      "id": "019f27be-9f7a-78c0-a624-04d644b81242",
+      "programId": "019f0886-6943-76f7-a6d3-51011cbd8d63",
+      "location": {
+        "x": -60,
+        "y": 690
+      },
+      "size": {
+        "width": 254,
+        "height": 121.33333333333333
+      },
+      "inputs": [
+        {
+          "$type": "Order",
+          "value": null,
+          "id": "019f27be-9f7a-7b21-80f1-6f669489e3fd",
+          "programId": "019f0886-6943-76f7-a6d3-51011cbd8d63",
+          "nodeId": "019f27be-9f7a-78c0-a624-04d644b81242",
+          "optionId": "00000000-0000-0000-0000-000000000000",
+          "optionIndex": 0,
+          "usageType": 1,
+          "connections": [],
+          "anchor": {
+            "x": 0,
+            "y": 0
+          },
+          "isConnected": false,
+          "layoutOrientation": 0,
+          "valueEditor": null
+        },
+        {
+          "$type": "String",
+          "value": "{}",
+          "id": "019f27be-9f7a-7ba8-abb4-acde12381e96",
+          "programId": "019f0886-6943-76f7-a6d3-51011cbd8d63",
+          "nodeId": "019f27be-9f7a-78c0-a624-04d644b81242",
+          "optionId": "00000000-0000-0000-0000-000000000000",
+          "optionIndex": 0,
+          "usageType": 1,
+          "connections": [],
+          "anchor": {
+            "x": 0,
+            "y": 0
+          },
+          "isConnected": false,
+          "layoutOrientation": 0,
+          "valueEditor": null
+        },
+        {
+          "$type": "String",
+          "value": "Hello",
+          "id": "019f27be-9f7a-7bfd-b8a3-fb8ca0918c31",
+          "programId": "019f0886-6943-76f7-a6d3-51011cbd8d63",
+          "nodeId": "019f27be-9f7a-78c0-a624-04d644b81242",
+          "optionId": "00000000-0000-0000-0000-000000000000",
+          "optionIndex": 0,
+          "usageType": 1,
+          "connections": [
+            "019f27c0-ac6a-7433-ade8-36ea03dd6f46"
+          ],
+          "anchor": {
+            "x": -43,
+            "y": 796.3333333333334
+          },
+          "isConnected": true,
+          "layoutOrientation": 0,
+          "valueEditor": null
+        }
+      ],
+      "outputs": [
+        {
+          "$type": "Order",
+          "value": null,
+          "id": "019f27be-9f7a-7cdb-9645-90ba1d7b9734",
+          "programId": "019f0886-6943-76f7-a6d3-51011cbd8d63",
+          "nodeId": "019f27be-9f7a-78c0-a624-04d644b81242",
+          "optionId": "00000000-0000-0000-0000-000000000000",
+          "optionIndex": 0,
+          "usageType": 2,
+          "connections": [
+            "019f27be-9f7a-7a73-ad06-f4fdda11bdc4"
+          ],
+          "anchor": {
+            "x": 176.33333333333334,
+            "y": 732.3333333333334
+          },
+          "isConnected": true,
+          "layoutOrientation": 0,
+          "valueEditor": null
+        }
+      ]
+    },
+    {
+      "$type": "LoadImage",
+      "id": "019f27be-9f7a-7d75-8b05-c567eb74de49",
+      "programId": "019f0886-6943-76f7-a6d3-51011cbd8d63",
+      "location": {
+        "x": -755.4384778564911,
+        "y": 809.482852600709
+      },
+      "size": {
+        "width": 277.3333333333333,
+        "height": 225.33333333333334
+      },
+      "inputs": [
+        {
+          "$type": "String",
+          "value": "",
+          "id": "019f27be-9f7a-7512-8971-1a1d9629373a",
+          "programId": "019f0886-6943-76f7-a6d3-51011cbd8d63",
+          "nodeId": "019f27be-9f7a-7d75-8b05-c567eb74de49",
+          "optionId": "00000000-0000-0000-0000-000000000000",
+          "optionIndex": 0,
+          "usageType": 1,
+          "connections": [],
+          "anchor": {
+            "x": -738.4384778564911,
+            "y": 851.8161859340423
+          },
+          "isConnected": false,
+          "layoutOrientation": 1,
+          "valueEditor": {
+            "$type": "ImagePath"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "$type": "NativeObject",
+          "value": {
+            "objectType": 8
+          },
+          "traitFlags": 0,
+          "id": "019f27be-9f7a-7271-b752-0779f6388d3d",
+          "programId": "019f0886-6943-76f7-a6d3-51011cbd8d63",
+          "nodeId": "019f27be-9f7a-7d75-8b05-c567eb74de49",
+          "optionId": "00000000-0000-0000-0000-000000000000",
+          "optionIndex": 0,
+          "usageType": 2,
+          "connections": [],
+          "anchor": {
+            "x": 0,
+            "y": 0
+          },
+          "isConnected": false,
+          "layoutOrientation": 0,
+          "valueEditor": null
+        },
+        {
+          "$type": "NativeObject",
+          "value": {
+            "objectType": 8
+          },
+          "traitFlags": 0,
+          "id": "019f27be-9f7a-7cef-94e2-928d947b248d",
+          "programId": "019f0886-6943-76f7-a6d3-51011cbd8d63",
+          "nodeId": "019f27be-9f7a-7d75-8b05-c567eb74de49",
+          "optionId": "00000000-0000-0000-0000-000000000000",
+          "optionIndex": 0,
+          "usageType": 2,
+          "connections": [
+            "019f27c0-b44d-7e05-b696-0ecb93fa825c"
+          ],
+          "anchor": {
+            "x": -495.1051445231577,
+            "y": 877.1495192673756
+          },
+          "isConnected": true,
+          "layoutOrientation": 0,
+          "valueEditor": null
+        },
+        {
+          "$type": "NativeObject",
+          "value": {
+            "objectType": 8
+          },
+          "traitFlags": 0,
+          "id": "019f27be-9f7a-7b44-a66a-80520d194e3a",
+          "programId": "019f0886-6943-76f7-a6d3-51011cbd8d63",
+          "nodeId": "019f27be-9f7a-7d75-8b05-c567eb74de49",
+          "optionId": "00000000-0000-0000-0000-000000000000",
+          "optionIndex": 0,
+          "usageType": 2,
+          "connections": [],
+          "anchor": {
+            "x": 0,
+            "y": 0
+          },
+          "isConnected": false,
+          "layoutOrientation": 0,
+          "valueEditor": null
+        },
+        {
+          "$type": "Vector2Int64",
+          "value": {
+            "x": 0,
+            "y": 0
+          },
+          "id": "019f27be-9f7a-71f5-8a7a-97846c0598a1",
+          "programId": "019f0886-6943-76f7-a6d3-51011cbd8d63",
+          "nodeId": "019f27be-9f7a-7d75-8b05-c567eb74de49",
+          "optionId": "00000000-0000-0000-0000-000000000000",
+          "optionIndex": 0,
+          "usageType": 2,
+          "connections": [],
+          "anchor": {
+            "x": 0,
+            "y": 0
+          },
+          "isConnected": false,
+          "layoutOrientation": 1,
+          "valueEditor": null
+        }
+      ]
+    },
+    {
+      "$type": "LoadONNXModel",
+      "id": "019f27c0-7aef-76cf-9a77-59560fab101c",
+      "programId": "019f0886-6943-76f7-a6d3-51011cbd8d63",
+      "location": {
+        "x": -945,
+        "y": 675
+      },
+      "size": {
+        "width": 265.3333333333333,
+        "height": 89.33333333333333
+      },
+      "inputs": [
+        {
+          "$type": "String",
+          "value": "",
+          "id": "019f27c0-7af0-796a-be25-d241b69e0d71",
+          "programId": "019f0886-6943-76f7-a6d3-51011cbd8d63",
+          "nodeId": "019f27c0-7aef-76cf-9a77-59560fab101c",
+          "optionId": "00000000-0000-0000-0000-000000000000",
+          "optionIndex": 0,
+          "usageType": 1,
+          "connections": [],
+          "anchor": {
+            "x": 0,
+            "y": 0
+          },
+          "isConnected": false,
+          "layoutOrientation": 1,
+          "valueEditor": {
+            "$type": "Path",
+            "type": 0,
+            "fileType": {
+              "Name": "ONNX",
+              "Patterns": [
+                "*.onnx"
+              ],
+              "MimeTypes": null,
+              "AppleUniformTypeIdentifiers": null
+            }
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "$type": "NativeObject",
+          "value": {
+            "objectType": 7
+          },
+          "traitFlags": 0,
+          "id": "019f27c0-7af1-78b7-8951-fb6deb3bea43",
+          "programId": "019f0886-6943-76f7-a6d3-51011cbd8d63",
+          "nodeId": "019f27c0-7aef-76cf-9a77-59560fab101c",
+          "optionId": "00000000-0000-0000-0000-000000000000",
+          "optionIndex": 0,
+          "usageType": 2,
+          "connections": [
+            "019f27c0-c0ff-7f53-a5a4-96c97c50b64e"
+          ],
+          "anchor": {
+            "x": -697.3333333333334,
+            "y": 716.6666666666666
+          },
+          "isConnected": true,
+          "layoutOrientation": 0,
+          "valueEditor": null
+        }
+      ]
+    },
+    {
+      "$type": "ObjectDetection",
+      "id": "019f27c0-89da-74d9-a48e-ce1f95eb9f1c",
+      "programId": "019f0886-6943-76f7-a6d3-51011cbd8d63",
+      "location": {
+        "x": -405,
+        "y": 750
+      },
+      "size": {
+        "width": 276.6666666666667,
+        "height": 155.33333333333334
+      },
+      "inputs": [
+        {
+          "$type": "NativeObject",
+          "value": {
+            "objectType": 7
+          },
+          "traitFlags": 0,
+          "id": "019f27c0-89db-735e-81e6-36b9e159b91c",
+          "programId": "019f0886-6943-76f7-a6d3-51011cbd8d63",
+          "nodeId": "019f27c0-89da-74d9-a48e-ce1f95eb9f1c",
+          "optionId": "00000000-0000-0000-0000-000000000000",
+          "optionIndex": 0,
+          "usageType": 1,
+          "connections": [
+            "019f27c0-c0ff-7f53-a5a4-96c97c50b64e"
+          ],
+          "anchor": {
+            "x": -388,
+            "y": 791.6666666666666
+          },
+          "isConnected": true,
+          "layoutOrientation": 0,
+          "valueEditor": null
+        },
+        {
+          "$type": "NativeObject",
+          "value": {
+            "objectType": 8
+          },
+          "traitFlags": 0,
+          "id": "019f27c0-89db-710e-b02f-7b2f4c8fabce",
+          "programId": "019f0886-6943-76f7-a6d3-51011cbd8d63",
+          "nodeId": "019f27c0-89da-74d9-a48e-ce1f95eb9f1c",
+          "optionId": "00000000-0000-0000-0000-000000000000",
+          "optionIndex": 0,
+          "usageType": 1,
+          "connections": [
+            "019f27c0-b44d-7e05-b696-0ecb93fa825c"
+          ],
+          "anchor": {
+            "x": -388,
+            "y": 818.3333333333334
+          },
+          "isConnected": true,
+          "layoutOrientation": 0,
+          "valueEditor": null
+        },
+        {
+          "$type": "Float64",
+          "value": 0.5,
+          "id": "019f27c0-89db-7611-a237-8cfb32623711",
+          "programId": "019f0886-6943-76f7-a6d3-51011cbd8d63",
+          "nodeId": "019f27c0-89da-74d9-a48e-ce1f95eb9f1c",
+          "optionId": "00000000-0000-0000-0000-000000000000",
+          "optionIndex": 0,
+          "usageType": 1,
+          "connections": [],
+          "anchor": {
+            "x": 0,
+            "y": 0
+          },
+          "isConnected": false,
+          "layoutOrientation": 0,
+          "valueEditor": null
+        },
+        {
+          "$type": "Float64",
+          "value": 0.7,
+          "id": "019f27c0-89db-7198-8ed8-e0c2a0779f8a",
+          "programId": "019f0886-6943-76f7-a6d3-51011cbd8d63",
+          "nodeId": "019f27c0-89da-74d9-a48e-ce1f95eb9f1c",
+          "optionId": "00000000-0000-0000-0000-000000000000",
+          "optionIndex": 0,
+          "usageType": 1,
+          "connections": [],
+          "anchor": {
+            "x": 0,
+            "y": 0
+          },
+          "isConnected": false,
+          "layoutOrientation": 0,
+          "valueEditor": null
+        }
+      ],
+      "outputs": [
+        {
+          "$type": "JsonArray",
+          "value": null,
+          "id": "019f27c0-89db-7519-b9c6-6c90b388c863",
+          "programId": "019f0886-6943-76f7-a6d3-51011cbd8d63",
+          "nodeId": "019f27c0-89da-74d9-a48e-ce1f95eb9f1c",
+          "optionId": "00000000-0000-0000-0000-000000000000",
+          "optionIndex": 0,
+          "usageType": 2,
+          "connections": [
+            "019f27c0-ac6a-7433-ade8-36ea03dd6f46"
+          ],
+          "anchor": {
+            "x": -145.33333333333331,
+            "y": 792.3333333333334
+          },
+          "isConnected": true,
+          "layoutOrientation": 0,
+          "valueEditor": null
+        }
+      ]
+    }
+  ],
+  "connections": [
+    {
+      "id": "019f27be-9f7a-7a73-ad06-f4fdda11bdc4",
+      "programId": "019f0886-6943-76f7-a6d3-51011cbd8d63",
+      "sourceNodeId": "019f27be-9f7a-78c0-a624-04d644b81242",
+      "targetNodeId": "019f27be-9f7a-7287-bcda-55750813a6f4",
+      "sourceId": "019f27be-9f7a-7cdb-9645-90ba1d7b9734",
+      "targetId": "019f27be-9f7a-7d00-ad14-b1acd940155a"
+    },
+    {
+      "id": "019f27c0-ac6a-7433-ade8-36ea03dd6f46",
+      "programId": "019f0886-6943-76f7-a6d3-51011cbd8d63",
+      "sourceNodeId": "019f27c0-89da-74d9-a48e-ce1f95eb9f1c",
+      "targetNodeId": "019f27be-9f7a-78c0-a624-04d644b81242",
+      "sourceId": "019f27c0-89db-7519-b9c6-6c90b388c863",
+      "targetId": "019f27be-9f7a-7bfd-b8a3-fb8ca0918c31"
+    },
+    {
+      "id": "019f27c0-c0ff-7f53-a5a4-96c97c50b64e",
+      "programId": "019f0886-6943-76f7-a6d3-51011cbd8d63",
+      "sourceNodeId": "019f27c0-7aef-76cf-9a77-59560fab101c",
+      "targetNodeId": "019f27c0-89da-74d9-a48e-ce1f95eb9f1c",
+      "sourceId": "019f27c0-7af1-78b7-8951-fb6deb3bea43",
+      "targetId": "019f27c0-89db-735e-81e6-36b9e159b91c"
+    },
+    {
+      "id": "019f27c0-b44d-7e05-b696-0ecb93fa825c",
+      "programId": "019f0886-6943-76f7-a6d3-51011cbd8d63",
+      "sourceNodeId": "019f27be-9f7a-7d75-8b05-c567eb74de49",
+      "targetNodeId": "019f27c0-89da-74d9-a48e-ce1f95eb9f1c",
+      "sourceId": "019f27be-9f7a-7cef-94e2-928d947b248d",
+      "targetId": "019f27c0-89db-710e-b02f-7b2f4c8fabce"
+    }
+  ]
+}
+```
+:::
+
 ## 文本识别
+
+![](core-features/PixPin_2026-07-03_19-27-58.webp)
+
+::: details JSON
+```json:line-numbers
+{
+  "format": "VirmathElf",
+  "version": 8,
+  "nodes": [
+    {
+      "$type": "LoadOcrEngine",
+      "id": "019f2679-db5f-711a-b967-aa199593c6c9",
+      "programId": "019f0886-6943-76f7-a6d3-51011cbd8d63",
+      "location": {
+        "x": -945,
+        "y": 630
+      },
+      "size": {
+        "width": 460.6666666666667,
+        "height": 206.66666666666666
+      },
+      "inputs": [
+        {
+          "$type": "String",
+          "value": "elf:///ocr/pp-ocr_det.onnx",
+          "id": "019f2679-db60-73a9-8b60-41bf7e8df8bc",
+          "programId": "019f0886-6943-76f7-a6d3-51011cbd8d63",
+          "nodeId": "019f2679-db5f-711a-b967-aa199593c6c9",
+          "optionId": "00000000-0000-0000-0000-000000000000",
+          "optionIndex": 0,
+          "usageType": 1,
+          "connections": [],
+          "anchor": {
+            "x": 0,
+            "y": 0
+          },
+          "isConnected": false,
+          "layoutOrientation": 1,
+          "valueEditor": {
+            "$type": "Path",
+            "type": 0,
+            "fileType": {
+              "Name": "ONNX",
+              "Patterns": [
+                "*.onnx"
+              ],
+              "MimeTypes": null,
+              "AppleUniformTypeIdentifiers": null
+            }
+          }
+        },
+        {
+          "$type": "String",
+          "value": "elf:///ocr/pp-ocr_rec.onnx",
+          "id": "019f2679-db60-7925-8a36-e363760a69de",
+          "programId": "019f0886-6943-76f7-a6d3-51011cbd8d63",
+          "nodeId": "019f2679-db5f-711a-b967-aa199593c6c9",
+          "optionId": "00000000-0000-0000-0000-000000000000",
+          "optionIndex": 0,
+          "usageType": 1,
+          "connections": [],
+          "anchor": {
+            "x": 0,
+            "y": 0
+          },
+          "isConnected": false,
+          "layoutOrientation": 1,
+          "valueEditor": {
+            "$type": "Path",
+            "type": 0,
+            "fileType": {
+              "Name": "ONNX",
+              "Patterns": [
+                "*.onnx"
+              ],
+              "MimeTypes": null,
+              "AppleUniformTypeIdentifiers": null
+            }
+          }
+        },
+        {
+          "$type": "String",
+          "value": "elf:///ocr/pp-ocr_dict.txt",
+          "id": "019f2679-db60-7f5c-a2df-a1fa8fd4ce38",
+          "programId": "019f0886-6943-76f7-a6d3-51011cbd8d63",
+          "nodeId": "019f2679-db5f-711a-b967-aa199593c6c9",
+          "optionId": "00000000-0000-0000-0000-000000000000",
+          "optionIndex": 0,
+          "usageType": 1,
+          "connections": [],
+          "anchor": {
+            "x": 0,
+            "y": 0
+          },
+          "isConnected": false,
+          "layoutOrientation": 1,
+          "valueEditor": {
+            "$type": "Path",
+            "type": 0,
+            "fileType": {
+              "Name": "Text",
+              "Patterns": [
+                "*.txt"
+              ],
+              "MimeTypes": null,
+              "AppleUniformTypeIdentifiers": null
+            }
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "$type": "NativeObject",
+          "value": {
+            "objectType": 9
+          },
+          "traitFlags": 0,
+          "id": "019f2679-db60-7381-b9d1-6d62b7819578",
+          "programId": "019f0886-6943-76f7-a6d3-51011cbd8d63",
+          "nodeId": "019f2679-db5f-711a-b967-aa199593c6c9",
+          "optionId": "00000000-0000-0000-0000-000000000000",
+          "optionIndex": 0,
+          "usageType": 2,
+          "connections": [
+            "019f267a-c482-793c-a59f-f0265fab31e1"
+          ],
+          "anchor": {
+            "x": -501.33333333333337,
+            "y": 672.3333333333334
+          },
+          "isConnected": true,
+          "layoutOrientation": 0,
+          "valueEditor": null
+        }
+      ]
+    },
+    {
+      "$type": "End",
+      "id": "019f2679-ebb8-720e-9504-5d4538ba7ffb",
+      "programId": "019f0886-6943-76f7-a6d3-51011cbd8d63",
+      "location": {
+        "x": 270,
+        "y": 765
+      },
+      "size": {
+        "width": 90.66666666666667,
+        "height": 58.666666666666664
+      },
+      "inputs": [
+        {
+          "$type": "Order",
+          "value": null,
+          "id": "019f2679-ebb8-7a30-ab5e-2f30025ebfed",
+          "programId": "019f0886-6943-76f7-a6d3-51011cbd8d63",
+          "nodeId": "019f2679-ebb8-720e-9504-5d4538ba7ffb",
+          "optionId": "00000000-0000-0000-0000-000000000000",
+          "optionIndex": 0,
+          "usageType": 1,
+          "connections": [
+            "019f267a-b83b-73e7-8d72-e83cea27efc5"
+          ],
+          "anchor": {
+            "x": 287,
+            "y": 807.3333333333334
+          },
+          "isConnected": true,
+          "layoutOrientation": 0,
+          "valueEditor": null
+        }
+      ],
+      "outputs": []
+    },
+    {
+      "$type": "Log",
+      "id": "019f267a-021e-77c4-9e93-9f87343467b2",
+      "programId": "019f0886-6943-76f7-a6d3-51011cbd8d63",
+      "location": {
+        "x": -60,
+        "y": 705
+      },
+      "size": {
+        "width": 254,
+        "height": 121.33333333333333
+      },
+      "inputs": [
+        {
+          "$type": "Order",
+          "value": null,
+          "id": "019f267a-021e-7e97-9c61-834749b0a6ca",
+          "programId": "019f0886-6943-76f7-a6d3-51011cbd8d63",
+          "nodeId": "019f267a-021e-77c4-9e93-9f87343467b2",
+          "optionId": "00000000-0000-0000-0000-000000000000",
+          "optionIndex": 0,
+          "usageType": 1,
+          "connections": [],
+          "anchor": {
+            "x": 0,
+            "y": 0
+          },
+          "isConnected": false,
+          "layoutOrientation": 0,
+          "valueEditor": null
+        },
+        {
+          "$type": "String",
+          "value": "{}",
+          "id": "019f267a-021e-7bc9-9fd9-f4e16d2f55f4",
+          "programId": "019f0886-6943-76f7-a6d3-51011cbd8d63",
+          "nodeId": "019f267a-021e-77c4-9e93-9f87343467b2",
+          "optionId": "00000000-0000-0000-0000-000000000000",
+          "optionIndex": 0,
+          "usageType": 1,
+          "connections": [],
+          "anchor": {
+            "x": 0,
+            "y": 0
+          },
+          "isConnected": false,
+          "layoutOrientation": 0,
+          "valueEditor": null
+        },
+        {
+          "$type": "String",
+          "value": "Hello",
+          "id": "019f267a-0542-70b3-9917-96e7dae7f544",
+          "programId": "019f0886-6943-76f7-a6d3-51011cbd8d63",
+          "nodeId": "019f267a-021e-77c4-9e93-9f87343467b2",
+          "optionId": "00000000-0000-0000-0000-000000000000",
+          "optionIndex": 0,
+          "usageType": 1,
+          "connections": [
+            "019f267a-b342-7884-87e2-85a9fe1914ee"
+          ],
+          "anchor": {
+            "x": -43,
+            "y": 811.3333333333334
+          },
+          "isConnected": true,
+          "layoutOrientation": 0,
+          "valueEditor": null
+        }
+      ],
+      "outputs": [
+        {
+          "$type": "Order",
+          "value": null,
+          "id": "019f267a-021e-7a66-8957-297889f1c43f",
+          "programId": "019f0886-6943-76f7-a6d3-51011cbd8d63",
+          "nodeId": "019f267a-021e-77c4-9e93-9f87343467b2",
+          "optionId": "00000000-0000-0000-0000-000000000000",
+          "optionIndex": 0,
+          "usageType": 2,
+          "connections": [
+            "019f267a-b83b-73e7-8d72-e83cea27efc5"
+          ],
+          "anchor": {
+            "x": 176.33333333333334,
+            "y": 747.3333333333334
+          },
+          "isConnected": true,
+          "layoutOrientation": 0,
+          "valueEditor": null
+        }
+      ]
+    },
+    {
+      "$type": "Ocr",
+      "id": "019f267a-a16c-7139-93a2-224e969d1424",
+      "programId": "019f0886-6943-76f7-a6d3-51011cbd8d63",
+      "location": {
+        "x": -405,
+        "y": 765
+      },
+      "size": {
+        "width": 276.6666666666667,
+        "height": 120
+      },
+      "inputs": [
+        {
+          "$type": "NativeObject",
+          "value": {
+            "objectType": 9
+          },
+          "traitFlags": 0,
+          "id": "019f267a-a16c-7eb3-aae7-b46d68fb3e0c",
+          "programId": "019f0886-6943-76f7-a6d3-51011cbd8d63",
+          "nodeId": "019f267a-a16c-7139-93a2-224e969d1424",
+          "optionId": "00000000-0000-0000-0000-000000000000",
+          "optionIndex": 0,
+          "usageType": 1,
+          "connections": [
+            "019f267a-c482-793c-a59f-f0265fab31e1"
+          ],
+          "anchor": {
+            "x": -388,
+            "y": 807.3333333333334
+          },
+          "isConnected": true,
+          "layoutOrientation": 0,
+          "valueEditor": null
+        },
+        {
+          "$type": "NativeObject",
+          "value": {
+            "objectType": 8
+          },
+          "traitFlags": 0,
+          "id": "019f267a-a16c-793a-b322-c1870355e026",
+          "programId": "019f0886-6943-76f7-a6d3-51011cbd8d63",
+          "nodeId": "019f267a-a16c-7139-93a2-224e969d1424",
+          "optionId": "00000000-0000-0000-0000-000000000000",
+          "optionIndex": 0,
+          "usageType": 1,
+          "connections": [
+            "019f267f-7a6e-722b-8366-2f1e0fd484a8"
+          ],
+          "anchor": {
+            "x": -388,
+            "y": 834
+          },
+          "isConnected": true,
+          "layoutOrientation": 0,
+          "valueEditor": null
+        },
+        {
+          "$type": "Float64",
+          "value": 0.5,
+          "id": "019f267a-a16c-718a-a042-52ecc01e2f08",
+          "programId": "019f0886-6943-76f7-a6d3-51011cbd8d63",
+          "nodeId": "019f267a-a16c-7139-93a2-224e969d1424",
+          "optionId": "00000000-0000-0000-0000-000000000000",
+          "optionIndex": 0,
+          "usageType": 1,
+          "connections": [],
+          "anchor": {
+            "x": 0,
+            "y": 0
+          },
+          "isConnected": false,
+          "layoutOrientation": 0,
+          "valueEditor": null
+        }
+      ],
+      "outputs": [
+        {
+          "$type": "JsonArray",
+          "value": null,
+          "id": "019f267a-a16c-7c89-9739-6341800228f8",
+          "programId": "019f0886-6943-76f7-a6d3-51011cbd8d63",
+          "nodeId": "019f267a-a16c-7139-93a2-224e969d1424",
+          "optionId": "00000000-0000-0000-0000-000000000000",
+          "optionIndex": 0,
+          "usageType": 2,
+          "connections": [
+            "019f267a-b342-7884-87e2-85a9fe1914ee"
+          ],
+          "anchor": {
+            "x": -145.33333333333331,
+            "y": 807.3333333333334
+          },
+          "isConnected": true,
+          "layoutOrientation": 0,
+          "valueEditor": null
+        }
+      ]
+    },
+    {
+      "$type": "LoadImage",
+      "id": "019f267f-5501-7fc9-a3f3-8d2a08126552",
+      "programId": "019f0886-6943-76f7-a6d3-51011cbd8d63",
+      "location": {
+        "x": -765,
+        "y": 885
+      },
+      "size": {
+        "width": 277.3333333333333,
+        "height": 225.33333333333334
+      },
+      "inputs": [
+        {
+          "$type": "String",
+          "value": "",
+          "id": "019f267f-5503-73c0-bf20-ceedd3b8408d",
+          "programId": "019f0886-6943-76f7-a6d3-51011cbd8d63",
+          "nodeId": "019f267f-5501-7fc9-a3f3-8d2a08126552",
+          "optionId": "00000000-0000-0000-0000-000000000000",
+          "optionIndex": 0,
+          "usageType": 1,
+          "connections": [],
+          "anchor": {
+            "x": 0,
+            "y": 0
+          },
+          "isConnected": false,
+          "layoutOrientation": 1,
+          "valueEditor": {
+            "$type": "ImagePath"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "$type": "NativeObject",
+          "value": {
+            "objectType": 8
+          },
+          "traitFlags": 0,
+          "id": "019f267f-5504-76e4-9d36-b3e7fa7fd055",
+          "programId": "019f0886-6943-76f7-a6d3-51011cbd8d63",
+          "nodeId": "019f267f-5501-7fc9-a3f3-8d2a08126552",
+          "optionId": "00000000-0000-0000-0000-000000000000",
+          "optionIndex": 0,
+          "usageType": 2,
+          "connections": [],
+          "anchor": {
+            "x": 0,
+            "y": 0
+          },
+          "isConnected": false,
+          "layoutOrientation": 0,
+          "valueEditor": null
+        },
+        {
+          "$type": "NativeObject",
+          "value": {
+            "objectType": 8
+          },
+          "traitFlags": 0,
+          "id": "019f267f-5504-7889-82aa-5acbb7385f6d",
+          "programId": "019f0886-6943-76f7-a6d3-51011cbd8d63",
+          "nodeId": "019f267f-5501-7fc9-a3f3-8d2a08126552",
+          "optionId": "00000000-0000-0000-0000-000000000000",
+          "optionIndex": 0,
+          "usageType": 2,
+          "connections": [
+            "019f267f-7a6e-722b-8366-2f1e0fd484a8"
+          ],
+          "anchor": {
+            "x": -504.66666666666663,
+            "y": 952.6666666666666
+          },
+          "isConnected": true,
+          "layoutOrientation": 0,
+          "valueEditor": null
+        },
+        {
+          "$type": "NativeObject",
+          "value": {
+            "objectType": 8
+          },
+          "traitFlags": 0,
+          "id": "019f267f-5504-76f0-a4d2-3cf01408690c",
+          "programId": "019f0886-6943-76f7-a6d3-51011cbd8d63",
+          "nodeId": "019f267f-5501-7fc9-a3f3-8d2a08126552",
+          "optionId": "00000000-0000-0000-0000-000000000000",
+          "optionIndex": 0,
+          "usageType": 2,
+          "connections": [],
+          "anchor": {
+            "x": 0,
+            "y": 0
+          },
+          "isConnected": false,
+          "layoutOrientation": 0,
+          "valueEditor": null
+        },
+        {
+          "$type": "Vector2Int64",
+          "value": {
+            "x": 0,
+            "y": 0
+          },
+          "id": "019f267f-5504-7679-89e3-49ab1c00be3e",
+          "programId": "019f0886-6943-76f7-a6d3-51011cbd8d63",
+          "nodeId": "019f267f-5501-7fc9-a3f3-8d2a08126552",
+          "optionId": "00000000-0000-0000-0000-000000000000",
+          "optionIndex": 0,
+          "usageType": 2,
+          "connections": [],
+          "anchor": {
+            "x": 0,
+            "y": 0
+          },
+          "isConnected": false,
+          "layoutOrientation": 1,
+          "valueEditor": null
+        }
+      ]
+    }
+  ],
+  "connections": [
+    {
+      "id": "019f267a-b83b-73e7-8d72-e83cea27efc5",
+      "programId": "019f0886-6943-76f7-a6d3-51011cbd8d63",
+      "sourceNodeId": "019f267a-021e-77c4-9e93-9f87343467b2",
+      "targetNodeId": "019f2679-ebb8-720e-9504-5d4538ba7ffb",
+      "sourceId": "019f267a-021e-7a66-8957-297889f1c43f",
+      "targetId": "019f2679-ebb8-7a30-ab5e-2f30025ebfed"
+    },
+    {
+      "id": "019f267a-b342-7884-87e2-85a9fe1914ee",
+      "programId": "019f0886-6943-76f7-a6d3-51011cbd8d63",
+      "sourceNodeId": "019f267a-a16c-7139-93a2-224e969d1424",
+      "targetNodeId": "019f267a-021e-77c4-9e93-9f87343467b2",
+      "sourceId": "019f267a-a16c-7c89-9739-6341800228f8",
+      "targetId": "019f267a-0542-70b3-9917-96e7dae7f544"
+    },
+    {
+      "id": "019f267a-c482-793c-a59f-f0265fab31e1",
+      "programId": "019f0886-6943-76f7-a6d3-51011cbd8d63",
+      "sourceNodeId": "019f2679-db5f-711a-b967-aa199593c6c9",
+      "targetNodeId": "019f267a-a16c-7139-93a2-224e969d1424",
+      "sourceId": "019f2679-db60-7381-b9d1-6d62b7819578",
+      "targetId": "019f267a-a16c-7eb3-aae7-b46d68fb3e0c"
+    },
+    {
+      "id": "019f267f-7a6e-722b-8366-2f1e0fd484a8",
+      "programId": "019f0886-6943-76f7-a6d3-51011cbd8d63",
+      "sourceNodeId": "019f267f-5501-7fc9-a3f3-8d2a08126552",
+      "targetNodeId": "019f267a-a16c-7139-93a2-224e969d1424",
+      "sourceId": "019f267f-5504-7889-82aa-5acbb7385f6d",
+      "targetId": "019f267a-a16c-793a-b322-c1870355e026"
+    }
+  ]
+}
+```
+:::
