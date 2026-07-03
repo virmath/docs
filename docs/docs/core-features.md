@@ -1,5 +1,9 @@
 # 核心功能
 
+::: info
+复制图片下方的 JSON 代码至程序画布，即可快速测试节点效果。
+:::
+
 ## 键鼠录制
 
 ![](core-features/PixPin_2026-07-01_20-45-47.webp)
@@ -1420,7 +1424,7 @@
 
 ## 对象识别
 
-![](core-features/PixPin_2026-07-03_19-35-32.webp)
+![](core-features/PixPin_2026-07-03_19-55-40.webp)
 
 ::: details JSON
 ```json:line-numbers

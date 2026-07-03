@@ -2,7 +2,10 @@ import { defineConfig } from "vitepress";
 
 export default defineConfig({
   markdown: {
-    math: true
+    math: true,
+    image: {
+      lazyLoading: true
+    }
   },
   head: [["link", { rel: "icon", href: "/favicon.ico" }]],
   locales: {
