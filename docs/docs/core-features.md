@@ -1913,7 +1913,7 @@
 
 ## 文本识别
 
-![](core-features/PixPin_2026-07-03_19-27-58.webp)
+![](core-features/PixPin_2026-07-04_22-34-39.webp)
 
 ::: details JSON
 ```json:line-numbers
