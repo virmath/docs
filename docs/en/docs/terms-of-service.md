@@ -181,4 +181,3 @@ Principal subscription features may include, but are not limited to:
 11.4 If you have any questions or suggestions, you may contact us through the following channels:
 
 - Email: contact@virmath.com
-- Address: Room 10, Building 2, Shengshi Boyue Mansion, No. 366 Minsheng Road, Gangbei District, Guigang City, Guangxi, China
