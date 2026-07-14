@@ -1,6 +1,6 @@
 # Terms of Service
 
-**Last Updated: July 2, 2026**
+**Last Updated: July 14, 2026**
 
 > **Disclaimer:** This English translation of the Terms of Service is provided for reference purposes only. In case of any discrepancy between the Chinese version and the English version, the Chinese version shall prevail. 本用户协议英文版仅供参考。如中英文版本有任何不一致之处，以中文版为准。
 

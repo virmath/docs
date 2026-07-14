@@ -1,6 +1,6 @@
 # Privacy Policy
 
-**Last Updated: June 6, 2026**
+**Last Updated: July 14, 2026**
 
 > **Disclaimer:** This English translation of the Privacy Policy is provided for reference purposes only. In case of any discrepancy between the Chinese version and the English version, the Chinese version shall prevail. 本隐私政策英文版仅供参考。如中英文版本有任何不一致之处，以中文版为准。
 
@@ -155,6 +155,5 @@ You may manage or disable cookies in your browser settings. **Please note, howev
 If you have any questions, comments, or suggestions regarding this Policy, or wish to exercise your personal information rights, please contact us through the following channels:
 
 - Email: contact@virmath.com
-- Address: Room 10, Building 2, Shengshi Boyue Mansion, No. 366 Minsheng Road, Gangbei District, Guigang City, Guangxi, China
 
 We will address your concerns promptly, typically within 15 business days.
