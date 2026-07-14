@@ -1,5 +1,7 @@
-import { h, defineComponent } from "vue";
+import { h, defineComponent, onMounted, onUnmounted, watch, nextTick } from "vue";
 import DefaultTheme from "vitepress/theme";
+import { useRoute } from "vitepress";
+import mediumZoom from "medium-zoom";
 import ScreenshotGallery from "./components/ScreenshotGallery.vue";
 import DownloadPanel from "./components/DownloadPanel.vue";
 import PricingPanel from "./components/PricingPanel.vue";
@@ -11,6 +13,38 @@ export default {
   extends: DefaultTheme,
   Layout: defineComponent({
     setup() {
+      const route = useRoute();
+      let zoom;
+
+      const initZoom = () => {
+        if (zoom) zoom.detach();
+        const images = document.querySelectorAll(
+          ".vp-doc img:not(.no-zoom)"
+        );
+        if (images.length) {
+          zoom = mediumZoom(images, {
+            background: "rgba(0, 0, 0, 0.85)",
+          });
+        }
+      };
+
+      onMounted(() => {
+        nextTick(initZoom);
+      });
+
+      // Handle client-side navigation (SPA)
+      watch(
+        () => route.path,
+        () => {
+          // Small delay to ensure DOM is ready after route change
+          setTimeout(() => nextTick(initZoom), 100);
+        }
+      );
+
+      onUnmounted(() => {
+        if (zoom) zoom.detach();
+      });
+
       return () =>
         h(DefaultTheme.Layout, null, {
           "home-features-before": () => h(ScreenshotGallery),

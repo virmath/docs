@@ -1,4 +1,12 @@
-﻿/* 收窄首页 hero 底部间距，与 ScreenshotGallery 衔接更紧凑 */
+/* 收窄首页 hero 底部间距，与 ScreenshotGallery 衔接更紧凑 */
 .VPHomeHero {
   padding-bottom: 32px !important;
+}
+
+/* medium-zoom 图片点击放大 - 确保覆盖层在全页面之上 */
+.medium-zoom-overlay {
+  z-index: 1000 !important;
+}
+.medium-zoom-image--opened {
+  z-index: 1001 !important;
 }
