@@ -1,7 +1,7 @@
 # 节点参考
 
 本文档按节点类型（`node-type:` URI 路径）拆分组织，每个节点一个页面。
-可通过 CLI 查询：`elf program node info -t <node type uri>`。
+可通过 CLI 查询：`elf program node types -t <node-type 路径>` 浏览分类、`elf program node docs -t <node-type 路径>` 查看节点文档。
 
 ## 通用执行规则
 
