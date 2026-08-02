@@ -4,8 +4,8 @@ export default defineConfig({
   markdown: {
     math: true,
     image: {
-      lazyLoading: true
-    }
+      lazyLoading: true,
+    },
   },
   head: [["link", { rel: "icon", href: "/favicon.ico" }]],
   locales: {
@@ -21,39 +21,44 @@ export default defineConfig({
           { text: "文档", link: "/docs/introduction" },
         ],
 
-        outline: 'deep',
+        outline: "deep",
 
         sidebar: [
           {
-            text: '概览',
+            text: "概览",
             items: [
-              { text: '简介', link: '/docs/introduction' },
-              { text: '系统要求', link: '/docs/system-requirements' },
-              { text: '全部下载', link: '/docs/downloads' },
-              { text: '更新日志', link: '/docs/changelog' },
-            ]
+              { text: "简介", link: "/docs/introduction" },
+              { text: "系统要求", link: "/docs/system-requirements" },
+              { text: "全部下载", link: "/docs/downloads" },
+              { text: "更新日志", link: "/docs/changelog" },
+            ],
           },
           {
-            text: '使用指南',
+            text: "使用指南",
             items: [
-              { text: '快速入门', link: '/docs/quick-start' },
-              { text: '核心功能', link: '/docs/core-features' },
-            ]
+              { text: "快速入门", link: "/docs/quick-start" },
+              { text: "核心功能", link: "/docs/core-features" },
+            ],
           },
           {
-            text: '参考',
+            text: "参考",
             items: [
-              { text: '节点参考', link: '/docs/node-reference' },
-            ]
+              {
+                text: "节点执行规则",
+                link: "/docs/rules/node-execution-rules",
+              },
+              { text: "连接规则", link: "/docs/rules/connection-rules" },
+              { text: "节点参考", link: "/docs/node-reference" },
+            ],
           },
           {
-            text: '其他',
+            text: "其他",
             items: [
-              { text: '常见问题 (FAQ)', link: '/docs/faq' },
-              { text: '用户协议', link: '/docs/terms-of-service' },
-              { text: '隐私政策', link: '/docs/privacy-policy' },
-            ]
-          }
+              { text: "常见问题 (FAQ)", link: "/docs/faq" },
+              { text: "用户协议", link: "/docs/terms-of-service" },
+              { text: "隐私政策", link: "/docs/privacy-policy" },
+            ],
+          },
         ],
 
         socialLinks: [
@@ -80,35 +85,38 @@ export default defineConfig({
 
         sidebar: [
           {
-            text: 'Overview',
+            text: "Overview",
             items: [
-              { text: 'Introduction', link: '/en/docs/introduction' },
-              { text: 'System Requirements', link: '/en/docs/system-requirements' },
-              { text: 'Downloads', link: '/en/docs/downloads' },
-              { text: 'Changelog', link: '/en/docs/changelog' },
-            ]
+              { text: "Introduction", link: "/en/docs/introduction" },
+              {
+                text: "System Requirements",
+                link: "/en/docs/system-requirements",
+              },
+              { text: "Downloads", link: "/en/docs/downloads" },
+              { text: "Changelog", link: "/en/docs/changelog" },
+            ],
           },
           {
-            text: 'User Guide',
+            text: "User Guide",
             items: [
-              { text: 'Quick Start', link: '/en/docs/quick-start' },
-              { text: 'Core Features', link: '/en/docs/core-features' },
-            ]
+              { text: "Quick Start", link: "/en/docs/quick-start" },
+              { text: "Core Features", link: "/en/docs/core-features" },
+            ],
           },
           {
-            text: 'Reference',
+            text: "Reference",
             items: [
-              { text: 'Node Reference', link: '/en/docs/node-reference' },
-            ]
+              { text: "Node Reference", link: "/en/docs/node-reference" },
+            ],
           },
           {
-            text: 'Other',
+            text: "Other",
             items: [
-              { text: 'FAQ', link: '/en/docs/faq' },
-              { text: 'Terms of Service', link: '/en/docs/terms-of-service' },
-              { text: 'Privacy Policy', link: '/en/docs/privacy-policy' },
-            ]
-          }
+              { text: "FAQ", link: "/en/docs/faq" },
+              { text: "Terms of Service", link: "/en/docs/terms-of-service" },
+              { text: "Privacy Policy", link: "/en/docs/privacy-policy" },
+            ],
+          },
         ],
 
         socialLinks: [
