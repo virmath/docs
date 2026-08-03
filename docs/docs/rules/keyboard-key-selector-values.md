@@ -1,6 +1,6 @@
 # 键盘按键选择器可选值
 
-键盘按键选择器（KeyboardKeySelector）支持的值是按键的英文名称，可直接用于 `option set` / `connector set` 的值参数，也可在编辑器中通过按键监听自动获取。按键名区分大小写；整数值为按键对应的内部编码。
+键盘按键选择器（KeyboardKeySelector）支持的值是按键的英文名称，可直接用于 `elf program option set` / `elf program node connector set` 的值参数，也可在编辑器中通过按键监听自动获取。按键名区分大小写；整数值为按键对应的内部编码。
 
 ## 字母键
 
