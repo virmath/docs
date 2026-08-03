@@ -43,6 +43,9 @@ export default defineConfig({
           {
             text: "参考",
             items: [
+              { text: "选项，连接器和数据的类型", link: "/docs/rules/data-types" },
+              { text: "键盘按键选择器可选值", link: "/docs/rules/keyboard-key-selector-values" },
+              { text: "鼠标按钮选择器可选值", link: "/docs/rules/mouse-button-selector-values" },
               {
                 text: "节点执行规则",
                 link: "/docs/rules/node-execution-rules",
