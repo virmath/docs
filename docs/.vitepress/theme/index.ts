@@ -55,7 +55,7 @@ export default {
               allDownloadsUrl: "docs/downloads",
               changelogUrl: "docs/changelog",
               version: "v1.0.0-beta.7",
-              releaseDate: "2026-07-24",
+              releaseDate: "2026-08-10",
               platforms: "Windows 10 22H2 x64",
             }),
             h(PricingPanel, {
