@@ -38,6 +38,7 @@ export default defineConfig({
             items: [
               { text: "快速入门", link: "/docs/quick-start" },
               { text: "核心功能", link: "/docs/core-features" },
+              { text: "命令行工具（CLI）", link: "/docs/cli" },
             ],
           },
           {
