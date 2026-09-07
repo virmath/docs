@@ -300,6 +300,10 @@
 
 - [获取窗口矩形](node-reference/System/Window/GetWindowRect.md)
 
+### 显示器
+
+- [获取显示器矩形](node-reference/System/Monitor/GetMonitorRect.md)
+
 ## 变量
 
 ### 获取值
