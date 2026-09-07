@@ -296,6 +296,10 @@
 
 - [创建](node-reference/System/Process/Spawn.md)
 
+### 窗口
+
+- [获取窗口矩形](node-reference/System/Window/GetWindowRect.md)
+
 ## 变量
 
 ### 获取值
