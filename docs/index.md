@@ -12,6 +12,9 @@ hero:
       text: 快速入门
       link: /docs/quick-start
     - theme: alt
+      text: 输入模拟
+      link: /docs/input-simulation
+    - theme: alt
       text: 节点参考
       link: /docs/node-reference
     - theme: alt

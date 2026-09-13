@@ -37,6 +37,7 @@ export default defineConfig({
             text: "使用指南",
             items: [
               { text: "快速入门", link: "/docs/quick-start" },
+              { text: "输入模拟", link: "/docs/input-simulation" },
               { text: "核心功能", link: "/docs/core-features" },
               { text: "命令行工具（CLI）", link: "/docs/cli" },
             ],
@@ -104,7 +105,9 @@ export default defineConfig({
             text: "User Guide",
             items: [
               { text: "Quick Start", link: "/en/docs/quick-start" },
+              { text: "Input Simulation", link: "/en/docs/input-simulation" },
               { text: "Core Features", link: "/en/docs/core-features" },
+              { text: "Command Line Interface (CLI)", link: "/en/docs/cli" },
             ],
           },
           {

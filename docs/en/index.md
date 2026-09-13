@@ -11,8 +11,14 @@ hero:
       text: Quick Start
       link: /en/docs/quick-start
     - theme: alt
+      text: Input Simulation
+      link: /en/docs/input-simulation
+    - theme: alt
       text: Node Reference
       link: /en/docs/node-reference
+    - theme: alt
+      text: CLI
+      link: /en/docs/cli
 
 features:
   - title: Multi-Source Image Capture
