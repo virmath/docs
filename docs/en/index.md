@@ -20,5 +20,5 @@ features:
   - title: Intelligent Recognition Engine
     details: Integrates template matching, OCR text recognition, and YOLO object detection for precise on-screen target localization
   - title: Full-Stack Input Control
-    details: Supports keyboard/mouse action recording and replay, native system API control, plus remote keyboard/mouse control over network (KMBoxNet protocol) and serial (Makcu protocol)
+    details: Supports keyboard/mouse action recording and replay, and simulates input at software, system, driver, and hardware levels
 ---
