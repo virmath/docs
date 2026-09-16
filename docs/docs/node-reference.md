@@ -207,6 +207,7 @@
 - [包含](node-reference/Data/String/StringContains.md)
 - [分割](node-reference/Data/String/StringSplit.md)
 - [清理](node-reference/Data/String/StringTrim.md)
+- [提取数值](node-reference/Data/String/ExtractNumbers.md)
 
 ### 时间
 
