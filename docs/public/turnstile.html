@@ -31,14 +31,9 @@
             return status;
         }
     </script>
-    <script>
-        if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('/sw.js')
-                .then(reg => console.log('SW registered', reg))
-                .catch(err => console.log('SW failed', err));
-        }
+    <script src="https://challenges.virmath.com/turnstile/v0/api.js" async defer>
     </script>
-    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer>
+    <script type="text/plain" src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer>
     </script>
 </head>
 
