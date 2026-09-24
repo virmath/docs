@@ -50,12 +50,12 @@ export default {
           "home-features-before": () => h(ScreenshotGallery),
           "home-features-after": () => [
             h(DownloadPanel, {
-              downloadUrl: "https://github.com/virmath/docs/releases/download/v1.0.0-beta.8/Virmath-Elf-v1.0.0-beta.8-win-x64-setup.exe",
-              chinaDownloadUrl: "https://gh-proxy.org/https://github.com/virmath/docs/releases/download/v1.0.0-beta.8/Virmath-Elf-v1.0.0-beta.8-win-x64-setup.exe",
+              downloadUrl: "https://github.com/virmath/docs/releases/download/v1.0.0-beta.9/Virmath-Elf-v1.0.0-beta.9-win-x64-setup.exe",
+              chinaDownloadUrl: "https://gh-proxy.org/https://github.com/virmath/docs/releases/download/v1.0.0-beta.9/Virmath-Elf-v1.0.0-beta.9-win-x64-setup.exe",
               allDownloadsUrl: "docs/downloads",
               changelogUrl: "docs/changelog",
-              version: "v1.0.0-beta.8",
-              releaseDate: "2026-09-14",
+              version: "v1.0.0-beta.9",
+              releaseDate: "2026-09-24",
               platforms: "Windows 10 22H2 x64",
             }),
             h(PricingPanel, {
