@@ -309,6 +309,10 @@
 
 - [获取显示器矩形](node-reference/System/Monitor/GetMonitorRect.md)
 
+### 音频
+
+- [播放音频](node-reference/System/Audio/Play.md)
+
 ## 变量
 
 ### 获取值
