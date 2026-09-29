@@ -313,6 +313,39 @@
 
 - [播放音频](node-reference/System/Audio/Play.md)
 
+## 浏览器
+
+- [启动浏览器](node-reference/Browser/Session/Launch.md)
+- [连接浏览器](node-reference/Browser/Session/Connect.md)
+- [关闭浏览器](node-reference/Browser/Session/Close.md)
+- [列出标签页](node-reference/Browser/Session/Tabs/List.md)
+- [新建标签页](node-reference/Browser/Session/Tabs/New.md)
+- [切换标签页](node-reference/Browser/Session/Tabs/Select.md)
+- [关闭标签页](node-reference/Browser/Session/Tabs/Close.md)
+- [打开网址](node-reference/Browser/Navigation/Open.md)
+- [设置视口](node-reference/Browser/Navigation/Resize.md)
+- [页面快照](node-reference/Browser/Read/Snapshot.md)
+- [获取文本](node-reference/Browser/Read/GetText.md)
+- [查找文本](node-reference/Browser/Read/Find.md)
+- [页面信息](node-reference/Browser/Read/PageInfo.md)
+- [截图](node-reference/Browser/Read/Screenshot.md)
+- [执行 JavaScript](node-reference/Browser/Read/Evaluate.md)
+- [点击元素](node-reference/Browser/Action/Click.md)
+- [输入文本](node-reference/Browser/Action/Type.md)
+- [选择选项](node-reference/Browser/Action/SelectOption.md)
+- [处理对话框](node-reference/Browser/Action/Dialog.md)
+- [等待](node-reference/Browser/Action/Wait.md)
+- [悬停元素](node-reference/Browser/Action/Hover.md)
+- [按键](node-reference/Browser/Action/PressKey.md)
+- [滚动](node-reference/Browser/Action/Scroll.md)
+- [拖拽](node-reference/Browser/Action/Drag.md)
+- [拖放数据](node-reference/Browser/Action/Drop.md)
+- [填写表单](node-reference/Browser/Action/FillForm.md)
+- [上传文件](node-reference/Browser/Action/Upload.md)
+- [控制台日志](node-reference/Browser/Diagnostics/Console.md)
+- [网络请求列表](node-reference/Browser/Diagnostics/NetworkRequests.md)
+- [请求详情](node-reference/Browser/Diagnostics/NetworkRequest.md)
+
 ## 变量
 
 ### 获取值
@@ -331,6 +364,7 @@
 
 #### 原生对象
 
+- [浏览器会话](node-reference/Variable/Getter/NativeObject/BrowserSession.md)
 - [图像](node-reference/Variable/Getter/NativeObject/Image.md)
 - [文本识别引擎](node-reference/Variable/Getter/NativeObject/OCREngine.md)
 - [ONNX](node-reference/Variable/Getter/NativeObject/ONNX.md)
@@ -352,6 +386,7 @@
 
 #### 原生对象
 
+- [浏览器会话](node-reference/Variable/Setter/NativeObject/BrowserSession.md)
 - [图像](node-reference/Variable/Setter/NativeObject/Image.md)
 - [文本识别引擎](node-reference/Variable/Setter/NativeObject/OCREngine.md)
 - [ONNX](node-reference/Variable/Setter/NativeObject/ONNX.md)
