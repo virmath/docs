@@ -266,6 +266,7 @@
 - [保存图像](node-reference/Image/SaveImage.md)
 - [缩放图片](node-reference/Image/ScaleImage.md)
 - [显示图片](node-reference/Image/ShowImage.md)
+- [SIFT 匹配](node-reference/Image/SiftMatch.md)
 - [模板匹配](node-reference/Image/TemplateMatch.md)
 
 ## 输入模拟
