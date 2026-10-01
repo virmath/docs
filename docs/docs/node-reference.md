@@ -261,6 +261,7 @@
 - [灰化图片](node-reference/Image/GrayscaleImage.md)
 - [图像平均值](node-reference/Image/ImageMean.md)
 - [加载图片](node-reference/Image/LoadImage.md)
+- [ORB 匹配](node-reference/Image/OrbMatch.md)
 - [从视频流读取帧](node-reference/Image/ReadFrameFromVideoStream.md)
 - [旋转图片](node-reference/Image/RotateImage.md)
 - [保存图像](node-reference/Image/SaveImage.md)
