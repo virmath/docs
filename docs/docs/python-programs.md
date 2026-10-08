@@ -68,7 +68,8 @@ import asyncio
 
 async def run(seconds):
     await asyncio.sleep(seconds)
-    return "done"
+    text = f"waited {seconds}s"
+    return text, len(text)
 ```
 
 ## 脚本的执行方式
