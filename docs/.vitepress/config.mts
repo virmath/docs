@@ -39,6 +39,7 @@ export default defineConfig({
               { text: "快速入门", link: "/docs/quick-start" },
               { text: "输入模拟", link: "/docs/input-simulation" },
               { text: "核心功能", link: "/docs/core-features" },
+              { text: "Python 程序", link: "/docs/python-programs" },
               { text: "命令行工具（CLI）", link: "/docs/cli" },
             ],
           },
