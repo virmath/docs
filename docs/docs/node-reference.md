@@ -246,6 +246,7 @@
 ### 并行
 
 - [并行全部](node-reference/Flow/Parallel/All.md)
+- [并行任一](node-reference/Flow/Parallel/Any.md)
 
 ## 图像
 
