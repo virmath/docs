@@ -257,6 +257,7 @@
 - [创建视频流（窗口）](node-reference/Image/CreateVideoStreamFromWindow.md)
 - [裁剪图片](node-reference/Image/CropImage.md)
 - [绘制矩形](node-reference/Image/DrawRectangle.md)
+- [绘制旋转矩形](node-reference/Image/DrawRotatedRectangle.md)
 - [绘制文本](node-reference/Image/DrawText.md)
 - [取像素](node-reference/Image/GetPixels.md)
 - [灰化图片](node-reference/Image/GrayscaleImage.md)
