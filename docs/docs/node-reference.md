@@ -324,6 +324,7 @@
 ### 窗口
 
 - [获取窗口矩形](node-reference/System/Window/GetWindowRect.md)
+- [查找窗口](node-reference/System/Window/FindWindows.md)
 
 ### 显示器
 
