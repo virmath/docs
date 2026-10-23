@@ -328,6 +328,7 @@
 
 ### 显示器
 
+- [枚举显示器](node-reference/System/Monitor/EnumerateMonitors.md)
 - [获取显示器矩形](node-reference/System/Monitor/GetMonitorRect.md)
 
 ### 音频
