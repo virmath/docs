@@ -323,6 +323,7 @@
 
 ### 窗口
 
+- [绑定窗口](node-reference/System/Window/BindWindow.md)
 - [获取窗口矩形](node-reference/System/Window/GetWindowRect.md)
 - [查找窗口](node-reference/System/Window/FindWindows.md)
 
