@@ -82,6 +82,10 @@
 
 - [浮点数](node-reference/Calculation/Math/Add/Float64.md)
 - [整数](node-reference/Calculation/Math/Add/Int64.md)
+- [二维浮点数向量](node-reference/Calculation/Math/Add/Vector2Float64.md)
+- [二维整数向量](node-reference/Calculation/Math/Add/Vector2Int64.md)
+- [四维浮点数向量](node-reference/Calculation/Math/Add/Vector4Float64.md)
+- [四维整数向量](node-reference/Calculation/Math/Add/Vector4Int64.md)
 
 #### 反余弦
 
@@ -107,6 +111,10 @@
 
 - [浮点数](node-reference/Calculation/Math/Divide/Float64.md)
 - [整数](node-reference/Calculation/Math/Divide/Int64.md)
+- [二维浮点数向量](node-reference/Calculation/Math/Divide/Vector2Float64.md)
+- [二维整数向量](node-reference/Calculation/Math/Divide/Vector2Int64.md)
+- [四维浮点数向量](node-reference/Calculation/Math/Divide/Vector4Float64.md)
+- [四维整数向量](node-reference/Calculation/Math/Divide/Vector4Int64.md)
 
 #### 向下取整
 
@@ -135,6 +143,10 @@
 
 - [浮点数](node-reference/Calculation/Math/Multiply/Float64.md)
 - [整数](node-reference/Calculation/Math/Multiply/Int64.md)
+- [二维浮点数向量](node-reference/Calculation/Math/Multiply/Vector2Float64.md)
+- [二维整数向量](node-reference/Calculation/Math/Multiply/Vector2Int64.md)
+- [四维浮点数向量](node-reference/Calculation/Math/Multiply/Vector4Float64.md)
+- [四维整数向量](node-reference/Calculation/Math/Multiply/Vector4Int64.md)
 
 #### 指数
 
@@ -157,6 +169,10 @@
 
 - [浮点数](node-reference/Calculation/Math/Subtract/Float64.md)
 - [整数](node-reference/Calculation/Math/Subtract/Int64.md)
+- [二维浮点数向量](node-reference/Calculation/Math/Subtract/Vector2Float64.md)
+- [二维整数向量](node-reference/Calculation/Math/Subtract/Vector2Int64.md)
+- [四维浮点数向量](node-reference/Calculation/Math/Subtract/Vector4Float64.md)
+- [四维整数向量](node-reference/Calculation/Math/Subtract/Vector4Int64.md)
 
 #### 正切
 
@@ -307,10 +323,13 @@
 
 ### 窗口
 
+- [绑定窗口](node-reference/System/Window/BindWindow.md)
 - [获取窗口矩形](node-reference/System/Window/GetWindowRect.md)
+- [查找窗口](node-reference/System/Window/FindWindows.md)
 
 ### 显示器
 
+- [枚举显示器](node-reference/System/Monitor/EnumerateMonitors.md)
 - [获取显示器矩形](node-reference/System/Monitor/GetMonitorRect.md)
 
 ### 音频
