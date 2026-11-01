@@ -12,6 +12,13 @@
 - [加载ONNX模型](node-reference/AI/LoadONNXModel.md)
 - [加载文本识别引擎](node-reference/AI/LoadOcrEngine.md)
 
+### 决策
+
+- [决策](node-reference/AI/Decision/Decision.md)
+- [创建判断题](node-reference/AI/Decision/CreatePredicate.md)
+- [创建选择题](node-reference/AI/Decision/CreateChoice.md)
+- [创建评分题](node-reference/AI/Decision/CreateScore.md)
+
 ### 推理
 
 - [文本识别](node-reference/AI/Inference/OCR.md)
