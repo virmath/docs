@@ -14,7 +14,7 @@
 
 ### 决策
 
-- [决策](node-reference/AI/Decision/Decision.md)
+- [结构化问答](node-reference/AI/Decision/AnswerQuestions.md)
 - [创建判断题](node-reference/AI/Decision/CreatePredicate.md)
 - [创建选择题](node-reference/AI/Decision/CreateChoice.md)
 - [创建评分题](node-reference/AI/Decision/CreateScore.md)
