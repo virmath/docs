@@ -13,30 +13,4 @@
 
 将状态和问题集发送到“设置 > 决策 API”中配置的后端，并返回结构化回答。
 
-问题按数组顺序处理。题目对象没有 `name` 字段时，会自动使用 `question_1`、`question_2` 等名称；回答数组保持相同的顺序。
-
 问题集不能为空。选择题至少需要 2 个选项，评分题至少需要 2 个评分级别；上限由所选后端校验。
-
-## 输出示例
-
-```json
-[
-  {
-    "name": "question_1",
-    "type": "predicate",
-    "probability": 0.87
-  },
-  {
-    "name": "question_2",
-    "type": "choice",
-    "choice": "继续",
-    "probabilities": {
-      "继续": 0.92,
-      "停止": 0.08
-    },
-    "confidence": 0.94
-  }
-]
-```
-
-评分题回答包含 `score`、`levels`、`probabilities` 和 `confidence`。模型拒绝回答时，对应元素的类型为 `refusal`。
